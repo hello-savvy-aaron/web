@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  /* Canvas & ink */
+  --color-bg-canvas:       #FBF8F2;
+  --color-bg-elevated:     #FFFFFF;
+  --color-bg-section-tint: #F5F1E8;
+  --color-ink-primary:     #0D1F1C;
+  --color-ink-secondary:   #4A5854;
+  --color-ink-tertiary:    #8A938F;
+
+  /* Brand primary (small areas, links, pill backgrounds) */
+  --color-brand-primary:       #7C6FE0;
+  --color-brand-primary-hover: #6557CC;
+  --color-brand-primary-soft:  #EEE9FB;
+  --color-brand-deep:          #4A3E9E;
+
+  /* Display tier (wordmark, hero, oversized CTAs) */
+  --color-display-lavender: #5B47E5;
+  --color-display-violet:   #8B5BD4;
+  --color-display-magenta:  #D8479A;
+
+  /* Mint — sanctioned secondary (tonal variety, accent borders) */
+  --color-mint-100: #E8F5EE;
+  --color-mint-200: #C8E8D4;
+  --color-mint-500: #4FAE7A;
+
+  /* Type scale */
+  --text-xs:   12px;
+  --text-sm:   14px;
+  --text-base: 16px;
+  --text-lg:   18px;
+  --text-xl:   20px;
+  --text-2xl:  24px;
+  --text-3xl:  32px;
+  --text-4xl:  40px;
+  --text-hero: 64px;
+
+  /* Radius */
+  --radius-sm:   8px;
+  --radius-md:   16px;
+  --radius-lg:   24px;
+  --radius-xl:   32px;
+  --radius-pill: 9999px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background: var(--color-bg-canvas);
+  color: var(--color-ink-primary);
+  font-family: var(--font-inter), "Inter", system-ui, -apple-system, sans-serif;
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
+}
