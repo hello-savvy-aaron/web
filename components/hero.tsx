@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const GRADIENT_TEXT: React.CSSProperties = {
   backgroundImage:
     "linear-gradient(135deg, #5B47E5 0%, #8B5BD4 50%, #D8479A 100%)",
@@ -26,17 +28,19 @@ export default function Hero() {
         </p>
 
         <div className="flex flex-wrap gap-4">
-          <a
-            href="#book-chat"
+          <Link
+            href="/book"
             className="rounded-pill bg-display-lavender px-8 py-4 text-base font-semibold text-white shadow-[0_0_24px_0_rgba(91,71,229,0.3)] transition-colors duration-150 ease-out hover:bg-brand-primary-hover"
           >
-            Book a chat
-          </a>
+            Book a Chat (Free)
+          </Link>
+          {/* TEMPORARY href: mailto fallback until the Stripe payment link
+              for Blueprints is wired. Per Aaron 2026-05-20. */}
           <a
-            href="#assessment"
+            href="mailto:aaron@hellosavvy.design?subject=Get%20Blueprints%20%E2%80%94%20%24449"
             className="rounded-pill bg-mint-100 px-8 py-4 text-base font-semibold text-ink-primary ring-2 ring-mint-500 ring-inset transition-colors duration-150 ease-out hover:bg-mint-200"
           >
-            Start the Assessment
+            Get Blueprints ($449)
           </a>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import SiteNav from "@/components/site-nav";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -10,9 +11,37 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "HelloSavvy — Custom software, transparently built",
+  metadataBase: new URL("https://hellosavvy.design"),
+  title: {
+    default: "HelloSavvy — Custom software, transparently built",
+    template: "%s · HelloSavvy",
+  },
   description:
-    "A small studio of senior partners building the right thing for each client",
+    "Enterprise-class standards, built for your scale. Start with a Blueprint for under $500.",
+  openGraph: {
+    title: "HelloSavvy — Custom software, transparently built",
+    description:
+      "Enterprise-class standards, built for your scale. Start with a Blueprint for under $500.",
+    url: "https://hellosavvy.design",
+    siteName: "HelloSavvy",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "HelloSavvy — Custom software, transparently built",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "HelloSavvy — Custom software, transparently built",
+    description:
+      "Enterprise-class standards, built for your scale. Start with a Blueprint for under $500.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
@@ -22,7 +51,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.variable}>
-      <body>{children}</body>
+      <body>
+        <SiteNav />
+        {children}
+      </body>
     </html>
   );
 }
