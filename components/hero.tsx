@@ -34,14 +34,14 @@ export default function Hero() {
           >
             Book a Chat (Free)
           </Link>
-          {/* TEMPORARY href: mailto fallback until the Stripe payment link
-              for Blueprints is wired. Per Aaron 2026-05-20. */}
-          <a
-            href="mailto:aaron@hellosavvy.design?subject=Get%20Blueprints%20%E2%80%94%20%24449"
+          {/* TEMPORARY: routes to /book until the Stripe checkout flow for
+              Blueprints is finished. Per Aaron 2026-05-20. */}
+          <Link
+            href="/book"
             className="rounded-pill bg-mint-100 px-8 py-4 text-base font-semibold text-ink-primary ring-2 ring-mint-500 ring-inset transition-colors duration-150 ease-out hover:bg-mint-200"
           >
             Get Blueprints ($449)
-          </a>
+          </Link>
         </div>
       </div>
 

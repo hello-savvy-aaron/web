@@ -36,9 +36,9 @@ export default function BookPage() {
           Pick a time. No pitch deck.
         </h1>
         <p className="mb-16 text-base leading-[1.5] text-ink-secondary lg:text-lg">
-          30 minutes, on your calendar. Bring the problem, the timeline, and
-          the rough number you&apos;re working with — we&apos;ll tell you what
-          fits, or that we&apos;re not the right shop.
+          30 minutes. Bring the problem, the timeline, and the budget. You&apos;ll
+          leave with a free two-page brief — how we&apos;d approach it, the risks,
+          the rough numbers. Worth the call even if you don&apos;t hire us.
         </p>
       </header>
 
