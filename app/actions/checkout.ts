@@ -1,7 +1,6 @@
 "use server";
 
 import { redirect } from "next/navigation";
-import type Stripe from "stripe";
 import { getStripe } from "@/lib/stripe";
 
 const BLUEPRINT_UNIT_AMOUNT_CENTS = 44900;
@@ -23,25 +22,25 @@ function appUrl(): string {
 export async function startBlueprintCheckout() {
   const priceId = process.env.STRIPE_BLUEPRINT_PRICE_ID;
 
-  const lineItem: Stripe.Checkout.SessionCreateParams.LineItem = priceId
-    ? { price: priceId, quantity: 1 }
-    : {
-        price_data: {
-          currency: "usd",
-          product_data: {
-            name: "Blueprint",
-            description:
-              "A fixed-price discovery engagement: discovery questions, honest plan or honest no, written recap within 24 hours.",
-          },
-          unit_amount: BLUEPRINT_UNIT_AMOUNT_CENTS,
-        },
-        quantity: 1,
-      };
-
   const session = await getStripe().checkout.sessions.create({
     mode: "payment",
     payment_method_types: ["card"],
-    line_items: [lineItem],
+    line_items: [
+      priceId
+        ? { price: priceId, quantity: 1 }
+        : {
+            price_data: {
+              currency: "usd",
+              product_data: {
+                name: "Blueprint",
+                description:
+                  "A fixed-price discovery engagement: discovery questions, honest plan or honest no, written recap within 24 hours.",
+              },
+              unit_amount: BLUEPRINT_UNIT_AMOUNT_CENTS,
+            },
+            quantity: 1,
+          },
+    ],
     success_url: `${appUrl()}/payment/success?session_id={CHECKOUT_SESSION_ID}`,
     cancel_url: `${appUrl()}/payment/cancel`,
     expires_at: Math.floor(Date.now() / 1000) + 24 * 60 * 60,
