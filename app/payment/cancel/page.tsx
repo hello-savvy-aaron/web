@@ -18,10 +18,10 @@ export default function PaymentCancelPage() {
       <p className="mb-10 text-base leading-[1.5] text-ink-secondary lg:text-lg">
         No charge was made. If something went wrong, email{" "}
         <a
-          href="mailto:hello@hellosavvy.design?subject=Blueprint%20checkout%20issue"
+          href="mailto:aaron@hellosavvy.design?subject=Blueprint%20checkout%20issue"
           className="text-display-lavender hover:underline"
         >
-          hello@hellosavvy.design
+          aaron@hellosavvy.design
         </a>{" "}
         and we&apos;ll sort it out.
       </p>

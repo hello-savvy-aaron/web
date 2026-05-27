@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { startBlueprintCheckout } from "@/app/actions/checkout";
 
 const GRADIENT_TEXT: React.CSSProperties = {
   backgroundImage:
@@ -34,14 +35,14 @@ export default function Hero() {
           >
             Book a Chat (Free)
           </Link>
-          {/* TEMPORARY: routes to /book until the Stripe checkout flow for
-              Blueprints is finished. Per Aaron 2026-05-20. */}
-          <Link
-            href="/book"
-            className="rounded-pill bg-mint-100 px-8 py-4 text-base font-semibold text-ink-primary ring-2 ring-mint-500 ring-inset transition-colors duration-150 ease-out hover:bg-mint-200"
-          >
-            Get Blueprints ($449)
-          </Link>
+          <form action={startBlueprintCheckout}>
+            <button
+              type="submit"
+              className="rounded-pill bg-mint-100 px-8 py-4 text-base font-semibold text-ink-primary ring-2 ring-mint-500 ring-inset transition-colors duration-150 ease-out hover:bg-mint-200"
+            >
+              Get Blueprints ($449)
+            </button>
+          </form>
         </div>
       </div>
 
