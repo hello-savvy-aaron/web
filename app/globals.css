@@ -25,6 +25,10 @@
   --color-mint-200: #C8E8D4;
   --color-mint-500: #4FAE7A;
 
+  /* Lime — only on stat-highlight pills (per DS §2.4, §5.2) */
+  --color-lime-200: #E5F0B8;
+  --color-lime-500: #B8D442;
+
   /* Type scale */
   --text-xs:   12px;
   --text-sm:   14px;
