@@ -3,7 +3,6 @@ import Link from "next/link";
 import { startBlueprintCheckout } from "@/app/actions/checkout";
 import EyebrowPill from "@/components/eyebrow-pill";
 import FaqAccordion from "@/components/faq-accordion";
-import PricingTable from "@/components/pricing-table";
 import ProcessSteps from "@/components/process-steps";
 import TierCard from "@/components/tier-card";
 import { NOT_IN_SCOPE, TIERS } from "@/lib/pricing";
@@ -67,10 +66,7 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* Section 2 — Comparison table */}
-      <PricingTable />
-
-      {/* Section 3 — Tier deep-dive cards */}
+      {/* Section 2 — Tier deep-dive cards */}
       <section className="mx-auto mt-24 w-full max-w-[1280px] px-8">
         <div className="mb-10 max-w-[720px]">
           <EyebrowPill className="mb-4">WHAT YOU ACTUALLY GET</EyebrowPill>
