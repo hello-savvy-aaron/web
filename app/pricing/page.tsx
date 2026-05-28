@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { startBlueprintCheckout } from "@/app/actions/checkout";
 import EyebrowPill from "@/components/eyebrow-pill";
-import FaqAccordion from "@/components/faq-accordion";
 import ProcessSteps from "@/components/process-steps";
 import TierCard from "@/components/tier-card";
 import { NOT_IN_SCOPE, TIERS } from "@/lib/pricing";
@@ -115,17 +114,6 @@ export default function PricingPage() {
             ))}
           </ul>
         </div>
-      </section>
-
-      {/* Section 6 — FAQ */}
-      <section className="mx-auto mt-24 w-full max-w-[1100px] px-8">
-        <div className="mx-auto mb-10 max-w-[720px]">
-          <EyebrowPill className="mb-4">FAQ</EyebrowPill>
-          <h2 className="text-[28px] leading-[1.1] font-bold tracking-[-0.025em] text-ink-primary md:text-4xl">
-            Common questions.
-          </h2>
-        </div>
-        <FaqAccordion />
       </section>
 
       {/* Section 7 — Final CTA band */}
