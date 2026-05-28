@@ -142,7 +142,7 @@ export default function PricingPage() {
             Start with the Assessment.
           </h2>
           <p className="mx-auto mb-8 max-w-[560px] text-base leading-[1.5] text-ink-secondary lg:text-lg">
-            $449 buys you two hours with Aaron and a written plan. If we
+            $449 buys you two hours with the team and a written plan. If we
             engage, it credits back. If we don&apos;t, you still own the plan.
           </p>
           <form action={startBlueprintCheckout} className="inline-block">

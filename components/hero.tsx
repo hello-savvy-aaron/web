@@ -47,7 +47,7 @@ export default function Hero() {
       </div>
 
       {/* TEMPORARY: giant HS monogram in place of the hero image. Per
-          Aaron 2026-05-19 — overrides §4 "wordmark/mark never combined"
+          2026-05-19 design note — overrides §4 "wordmark/mark never combined"
           for now; revisit when the real hero visual (project tracker) lands. */}
       <div
         aria-hidden

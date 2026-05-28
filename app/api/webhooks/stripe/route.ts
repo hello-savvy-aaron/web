@@ -141,7 +141,7 @@ function handleSubscriptionDeleted(sub: Stripe.Subscription) {
   console.log(
     `[stripe-webhook] subscription.deleted sub=${sub.id} customer=${sub.customer} ended=${sub.ended_at}`,
   );
-  // TODO: notify Aaron + Lara — Smart Retries already exhausted at this point.
+  // TODO: notify the partners — Smart Retries already exhausted at this point.
 }
 
 function handleInvoicePaymentSucceeded(invoice: Stripe.Invoice) {
@@ -157,7 +157,7 @@ function handleInvoicePaymentFailed(invoice: Stripe.Invoice) {
     `[stripe-webhook] invoice.payment_failed invoice=${invoice.id} customer=${invoice.customer} ` +
       `attempt=${invoice.attempt_count} next_attempt=${invoice.next_payment_attempt}`,
   );
-  // TODO: surface to Aaron + Lara on the final retry (attempt_count >= 3).
+  // TODO: surface to the partners on the final retry (attempt_count >= 3).
 }
 
 // --- helpers ----------------------------------------------------------------

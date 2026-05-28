@@ -26,7 +26,7 @@ export const TIERS: Tier[] = [
     pitch:
       "The productized intake. Bring us an idea; leave with a real plan and an honest go or no-go.",
     whatYouGet: [
-      "Up to 2 hours of consultation with Aaron",
+      "Up to 2 hours of consultation with the team",
       "A written plan: recommended approach, scope, cost, timeline, alternatives",
       "Two rounds of iteration to tighten the plan",
       "$449 applies as credit toward any engagement that follows",
@@ -80,7 +80,7 @@ export const PROCESS_STEPS = [
   {
     number: "1",
     title: "You buy the Assessment ($449)",
-    body: "Aaron schedules a 2-hour call within 3 business days.",
+    body: "We schedule a 2-hour call within 3 business days.",
   },
   {
     number: "2",
@@ -122,7 +122,7 @@ export const FAQ = [
   {
     slug: "who-does-work",
     q: "Who actually does the work?",
-    a: "Aaron, Tom, and Lara — the three partners. We pull in a vetted bench of senior contractors and AI agents when a project calls for it; you see who's on your engagement in your tracker. No junior layer, no hidden subcontractors.",
+    a: "Tom and Lara — the partners. We pull in a vetted bench of senior contractors and AI agents when a project calls for it; you see who's on your engagement in your tracker. No junior layer, no hidden subcontractors.",
   },
   {
     slug: "not-a-fit",
