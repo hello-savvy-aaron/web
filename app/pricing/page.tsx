@@ -122,7 +122,7 @@ export default function PricingPage() {
         <div className="mx-auto mb-10 max-w-[720px]">
           <EyebrowPill className="mb-4">FAQ</EyebrowPill>
           <h2 className="text-[28px] leading-[1.1] font-bold tracking-[-0.025em] text-ink-primary md:text-4xl">
-            Common questions, answered honestly.
+            Common questions.
           </h2>
         </div>
         <FaqAccordion />
