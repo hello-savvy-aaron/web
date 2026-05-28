@@ -27,7 +27,7 @@ export default function PricingSection() {
           <div>
             <EyebrowPill className="mb-6">PRICING</EyebrowPill>
             <h2 className="text-[36px] leading-[1.05] font-bold tracking-[-0.025em] text-ink-primary md:text-[48px] lg:text-hero">
-              Three tiers. One <span style={GRADIENT_TEXT}>honest</span> way in.
+              Three tiers. One <span style={GRADIENT_TEXT}>place</span> to start.
             </h2>
           </div>
           <div className="flex flex-col">
