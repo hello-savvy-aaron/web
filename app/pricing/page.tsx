@@ -45,7 +45,7 @@ export default function PricingPage() {
               a practical roadmap that&apos;s useful on its own. Like the
               direction? We&apos;ll build it with you — website, go-to-market
               motion, custom app — with your $449 credited toward the work. No
-              hourly billing. No surprises.
+              surprises mid-build.
             </p>
             <div className="flex flex-wrap gap-4">
               <form action={startBlueprintCheckout}>
