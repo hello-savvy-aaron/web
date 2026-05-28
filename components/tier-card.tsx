@@ -1,5 +1,4 @@
 import { startBlueprintCheckout } from "@/app/actions/checkout";
-import EyebrowPill from "@/components/eyebrow-pill";
 import type { Tier } from "@/lib/pricing";
 
 function CheckIcon() {
@@ -37,8 +36,7 @@ export default function TierCard({ tier, highlighted = false }: TierCardProps) {
         highlighted ? "ring-2 ring-display-lavender ring-offset-2 ring-offset-bg-canvas" : ""
       }`}
     >
-      <div className="mb-5 flex items-center justify-between gap-3">
-        <EyebrowPill>{tier.number}</EyebrowPill>
+      <div className="mb-5 flex items-center justify-end gap-3">
         <span
           className="inline-flex items-center rounded-pill bg-lime-200 px-3 py-1 text-sm font-bold text-brand-deep"
           aria-label={tier.priceLabel}

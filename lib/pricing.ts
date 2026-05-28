@@ -17,7 +17,7 @@ export const TIERS: Tier[] = [
   {
     id: "assessment",
     number: "01",
-    name: "Assessment & Plan",
+    name: "Blueprint & Plan",
     price: "$449",
     priceLabel: "Price: 449 US dollars",
     anchor: "Universal entry",
@@ -32,7 +32,7 @@ export const TIERS: Tier[] = [
       "$449 applies as credit toward any engagement that follows",
       "A clean break with a referral if we're not the right fit",
     ],
-    ctaLabel: "Start the Assessment ($449)",
+    ctaLabel: "Start the Blueprint ($449)",
   },
   {
     id: "websites-gtm",
@@ -52,7 +52,7 @@ export const TIERS: Tier[] = [
       "Lara leads the GTM side; 30 years across QA, BA, and lean process",
       "Tracker access for the duration of the engagement",
     ],
-    ctaLabel: "Start with an Assessment",
+    ctaLabel: "Start with a Blueprint",
   },
   {
     id: "custom-apps",
@@ -72,14 +72,14 @@ export const TIERS: Tier[] = [
       "Senior engineering throughout — no junior layer learning on your dime",
       "Tracker access with milestones, screenshots, and a comment thread",
     ],
-    ctaLabel: "Start with an Assessment",
+    ctaLabel: "Start with a Blueprint",
   },
 ];
 
 export const PROCESS_STEPS = [
   {
     number: "1",
-    title: "You buy the Assessment ($449)",
+    title: "You buy the Blueprint ($449)",
     body: "We schedule a 2-hour call within 3 business days.",
   },
   {
@@ -112,12 +112,12 @@ export const FAQ = [
   {
     slug: "already-know",
     q: "What if I already know what I want built?",
-    a: "The Assessment is still the right starting point. Two hours with a senior engineer and a written plan will catch the things you haven't thought of yet — and price the work honestly. If we agree on the first call, we can compress the iteration rounds and move into the engagement faster.",
+    a: "The Blueprint is still the right starting point. Two hours with a senior engineer and a written plan will catch the things you haven't thought of yet — and price the work honestly. If we agree on the first call, we can compress the iteration rounds and move into the engagement faster.",
   },
   {
     slug: "how-priced",
     q: "How are Websites & GTM and Custom Apps priced?",
-    a: "Fixed price per engagement, quoted after the Assessment. We don't do hourly billing. The ranges shown ($2K–$5K, $10K–$50K) cover most of what we take on; bigger or stranger work gets quoted individually.",
+    a: "Fixed price per engagement, quoted after the Blueprint. We don't do hourly billing. The ranges shown ($2K–$5K, $10K–$50K) cover most of what we take on; bigger or stranger work gets quoted individually.",
   },
   {
     slug: "who-does-work",
@@ -126,7 +126,7 @@ export const FAQ = [
   },
   {
     slug: "not-a-fit",
-    q: "What if the Assessment surfaces that we're not a fit?",
+    q: "What if the Blueprint surfaces that we're not a fit?",
     a: "You keep the written plan and we send you a referral to someone better suited. The $449 doesn't refund — it paid for the senior time and the plan, both of which you still get to keep.",
   },
   {
