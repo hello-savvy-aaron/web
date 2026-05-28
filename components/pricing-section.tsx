@@ -35,8 +35,7 @@ export default function PricingSection() {
               Every project starts with a $449 Blueprint, so you come away with
               a practical roadmap that&apos;s useful on its own. Like the
               direction? We&apos;ll build it with you — website, go-to-market
-              motion, custom app — with your $449 credited toward the work. No
-              surprises mid-build.
+              motion, custom app — with your $449 credited toward the work.
             </p>
             <div className="flex flex-wrap gap-4">
               <form action={startBlueprintCheckout}>
