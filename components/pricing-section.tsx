@@ -1,16 +1,9 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { startBlueprintCheckout } from "@/app/actions/checkout";
 import EyebrowPill from "@/components/eyebrow-pill";
 import ProcessSteps from "@/components/process-steps";
 import TierCard from "@/components/tier-card";
 import { NOT_IN_SCOPE, TIERS } from "@/lib/pricing";
-
-export const metadata: Metadata = {
-  title: "Pricing",
-  description:
-    "Three tiers. One honest way in. Every engagement starts with a $449 Blueprint.",
-};
 
 const GRADIENT_TEXT: React.CSSProperties = {
   backgroundImage:
@@ -22,21 +15,20 @@ const GRADIENT_TEXT: React.CSSProperties = {
 };
 
 const SOFT_GRADIENT_BG: React.CSSProperties = {
-  background:
-    "linear-gradient(180deg, #FBF8F2 0%, #EEE9FB 100%)",
+  background: "linear-gradient(180deg, #FBF8F2 0%, #EEE9FB 100%)",
 };
 
-export default function PricingPage() {
+export default function PricingSection() {
   return (
-    <main className="pb-24">
-      {/* Section 1 — Page header */}
-      <section className="mx-auto max-w-[1280px] px-8 pt-12 pb-8 lg:pt-20 lg:pb-10">
+    <div id="pricing" className="scroll-mt-24 pb-24">
+      {/* Section header */}
+      <section className="mx-auto max-w-[1280px] px-8 pt-12 pb-8 lg:pt-16 lg:pb-10">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-end lg:gap-16">
           <div>
             <EyebrowPill className="mb-6">PRICING</EyebrowPill>
-            <h1 className="text-[36px] leading-[1.05] font-bold tracking-[-0.025em] text-ink-primary md:text-[48px] lg:text-hero">
+            <h2 className="text-[36px] leading-[1.05] font-bold tracking-[-0.025em] text-ink-primary md:text-[48px] lg:text-hero">
               Three tiers. One <span style={GRADIENT_TEXT}>honest</span> way in.
-            </h1>
+            </h2>
           </div>
           <div className="flex flex-col">
             <p className="mb-8 max-w-[560px] text-base leading-[1.5] text-ink-secondary lg:text-lg">
@@ -66,7 +58,7 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* Section 2 — Tier deep-dive cards */}
+      {/* Tier deep-dive cards */}
       <section className="mx-auto mt-6 w-full max-w-[1280px] px-8">
         <EyebrowPill className="mb-8 text-sm">WHAT YOU GET</EyebrowPill>
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-3 lg:items-stretch">
@@ -81,24 +73,24 @@ export default function PricingPage() {
         </p>
       </section>
 
-      {/* Section 4 — How an engagement starts */}
+      {/* How an engagement starts */}
       <section className="mx-auto mt-24 w-full max-w-[1100px] px-8">
         <div className="mb-10 max-w-[720px]">
           <EyebrowPill className="mb-4">HOW IT STARTS</EyebrowPill>
-          <h2 className="text-[28px] leading-[1.1] font-bold tracking-[-0.025em] text-ink-primary md:text-4xl">
+          <h3 className="text-[28px] leading-[1.1] font-bold tracking-[-0.025em] text-ink-primary md:text-4xl">
             Same first three steps, every time.
-          </h2>
+          </h3>
         </div>
         <ProcessSteps />
       </section>
 
-      {/* Section 5 — Things we don't do */}
+      {/* Things we don't do */}
       <section className="mx-auto mt-24 w-full max-w-[1100px] px-8">
         <div className="rounded-xl bg-bg-section-tint p-8 md:p-10">
           <EyebrowPill className="mb-4">SCOPE</EyebrowPill>
-          <h2 className="mb-6 text-[28px] leading-[1.1] font-bold tracking-[-0.025em] text-ink-primary md:text-3xl">
+          <h3 className="mb-6 text-[28px] leading-[1.1] font-bold tracking-[-0.025em] text-ink-primary md:text-3xl">
             Things we don&apos;t do.
-          </h2>
+          </h3>
           <ul className="flex max-w-[760px] flex-col gap-3">
             {NOT_IN_SCOPE.map((item) => (
               <li
@@ -116,15 +108,15 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* Section 7 — Final CTA band */}
+      {/* Final CTA band */}
       <section className="mt-24 px-4">
         <div
           className="mx-auto max-w-[1280px] rounded-xl px-8 py-20 text-center"
           style={SOFT_GRADIENT_BG}
         >
-          <h2 className="mx-auto mb-5 max-w-[640px] text-[32px] leading-[1.1] font-bold tracking-[-0.025em] text-ink-primary md:text-4xl">
+          <h3 className="mx-auto mb-5 max-w-[640px] text-[32px] leading-[1.1] font-bold tracking-[-0.025em] text-ink-primary md:text-4xl">
             Start with the Blueprint.
-          </h2>
+          </h3>
           <p className="mx-auto mb-8 max-w-[560px] text-base leading-[1.5] text-ink-secondary lg:text-lg">
             $449 buys you two hours with the team and a written plan. If we
             engage, it credits back. If we don&apos;t, you still own the plan.
@@ -147,6 +139,6 @@ export default function PricingPage() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
