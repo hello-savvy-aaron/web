@@ -95,7 +95,6 @@ export const PROCESS_STEPS = [
 ];
 
 export const NOT_IN_SCOPE = [
-  "Logo design and brand identity work as standalone projects",
   "Native iOS or Android development (responsive web with PWA install: yes)",
   "Enterprise procurement, SOC 2 audits, six-month sales cycles",
   "Pixel-perfect Figma mockups before any code (we design in the browser)",
