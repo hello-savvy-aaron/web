@@ -22,15 +22,14 @@ export const TIERS: Tier[] = [
     priceLabel: "Price: 449 US dollars",
     anchor: "Universal entry",
     shortDescription:
-      "Up to 2 hours with the team, two rounds of iteration, and a written plan covering recommended approach, scope, cost, timeline, and alternatives. Credit applies to any engagement that follows. The productized intake.",
+      "2 hours with the team, several rounds of iteration, and a written plan covering recommended approach, scope, cost, timeline, and alternatives. Credit applies to any engagement that follows. The productized intake.",
     pitch:
-      "The productized intake. Bring us an idea; leave with a real plan and an honest go or no-go.",
+      "The productized intake. Bring us an idea; leave with a real plan.",
     whatYouGet: [
-      "Up to 2 hours of consultation with the team",
+      "2 hours of consultation with the team",
       "A written plan: recommended approach, scope, cost, timeline, alternatives",
-      "Two rounds of iteration to tighten the plan",
+      "Several rounds of iteration to tighten the plan",
       "$449 applies as credit toward any engagement that follows",
-      "A clean break with a referral if we're not the right fit",
     ],
     ctaLabel: "Start the Blueprint ($449)",
   },
@@ -85,7 +84,7 @@ export const PROCESS_STEPS = [
   {
     number: "2",
     title: "We write the plan",
-    body: "Approach, scope, cost, timeline, alternatives. Two rounds of iteration to land it.",
+    body: "Approach, scope, cost, timeline, alternatives. Several rounds of iteration to land it.",
   },
   {
     number: "3",
