@@ -1,12 +1,7 @@
 import Link from "next/link";
 import Wordmark from "@/components/wordmark";
 
-const NAV_LINKS = [
-  { label: "Work", href: "/#work" },
-  { label: "Process", href: "/#process" },
-  { label: "About", href: "/#about" },
-  { label: "Pricing", href: "/#pricing" },
-];
+const NAV_LINKS = [{ label: "Pricing", href: "/#pricing" }];
 
 export default function SiteNav() {
   return (
