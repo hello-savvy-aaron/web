@@ -22,7 +22,7 @@ export const TIERS: Tier[] = [
     priceLabel: "Price: 449 US dollars",
     anchor: "Universal entry",
     shortDescription:
-      "Up to 2 hours with Aaron, two rounds of iteration, and a written plan covering recommended approach, scope, cost, timeline, and alternatives. Credit applies to any engagement that follows. The productized intake.",
+      "Up to 2 hours with the team, two rounds of iteration, and a written plan covering recommended approach, scope, cost, timeline, and alternatives. Credit applies to any engagement that follows. The productized intake.",
     pitch:
       "The productized intake. Bring us an idea; leave with a real plan and an honest go or no-go.",
     whatYouGet: [

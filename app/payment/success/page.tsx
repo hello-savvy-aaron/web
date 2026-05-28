@@ -41,7 +41,7 @@ export default async function PaymentSuccessPage({ searchParams }: Props) {
         {amount
           ? `We've received your payment of ${amount} for the Blueprint.`
           : "Your payment was successful."}{" "}
-        A receipt is on its way to your inbox. Aaron will follow up within one
+        A receipt is on its way to your inbox. The team will follow up within one
         business day with the discovery questions and a calendar link.
       </p>
       <Link
