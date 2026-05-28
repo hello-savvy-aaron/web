@@ -73,7 +73,7 @@ export default function PricingSection() {
       </section>
 
       {/* How an engagement starts */}
-      <section className="mx-auto mt-24 w-full max-w-[1100px] px-8">
+      <section className="mx-auto mt-24 w-full max-w-[1280px] px-8">
         <div className="mb-10 max-w-[720px]">
           <EyebrowPill className="mb-4">HOW IT STARTS</EyebrowPill>
           <h3 className="text-[28px] leading-[1.1] font-bold tracking-[-0.025em] text-ink-primary md:text-4xl">
