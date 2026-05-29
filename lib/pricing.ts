@@ -47,7 +47,6 @@ export const TIERS: Tier[] = [
     pitch:
       "Sites that do real work, and the growth motion that puts them in front of customers.",
     whatYouGet: [
-      "Starts with your ideal customer profile — the foundation for everything else",
       "Brand, messaging, offer, and pricing tuned to that profile",
       "Channels, ads, and sales outreach mapped before we build",
       "The site comes last — built to reflect the strategy, not guess at it",
