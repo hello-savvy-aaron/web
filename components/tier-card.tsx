@@ -63,10 +63,10 @@ export default function TierCard({ tier, highlighted = false }: TierCardProps) {
       </ul>
 
       <div className="mt-auto">
-        <div className="mb-5">
-          <div className="mb-1 text-xs font-semibold tracking-[0.08em] text-ink-tertiary uppercase">
-            Anchor example
-          </div>
+        <div className="mb-5 flex flex-wrap items-baseline gap-x-2">
+          <span className="text-xs font-semibold tracking-[0.08em] text-ink-tertiary uppercase">
+            Anchor example:
+          </span>
           {tier.anchorHref ? (
             <a
               href={tier.anchorHref}
@@ -77,7 +77,7 @@ export default function TierCard({ tier, highlighted = false }: TierCardProps) {
               {tier.anchor}
             </a>
           ) : (
-            <div className="text-sm text-ink-secondary">{tier.anchor}</div>
+            <span className="text-sm text-ink-secondary">{tier.anchor}</span>
           )}
         </div>
       </div>
