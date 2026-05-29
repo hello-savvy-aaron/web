@@ -35,6 +35,12 @@ export default function Hero() {
           >
             Book a Chat (Free)
           </Link>
+          <Link
+            href="/#pricing"
+            className="rounded-pill bg-brand-primary-soft px-8 py-4 text-base font-semibold text-display-lavender transition-colors duration-150 ease-out hover:bg-[#E2DAF7]"
+          >
+            View Pricing
+          </Link>
           <form action={startBlueprintCheckout}>
             <button
               type="submit"

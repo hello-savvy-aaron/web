@@ -65,11 +65,6 @@ export default function PricingSection() {
             <TierCard key={tier.id} tier={tier} />
           ))}
         </div>
-        <p className="mt-8 max-w-[720px] text-sm leading-[1.625] text-ink-tertiary italic">
-          All three tiers funnel to the Blueprint as the booking action. The
-          Blueprint is the only thing on the site you can buy without a
-          conversation first.
-        </p>
       </section>
 
       {/* How an engagement starts */}
