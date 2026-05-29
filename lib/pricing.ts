@@ -82,18 +82,18 @@ export const TIERS: Tier[] = [
 export const PROCESS_STEPS = [
   {
     number: "1",
-    title: "You buy the Blueprint ($449)",
-    body: "We schedule a 2-hour call within 3 business days.",
+    title: "Have a free chat",
+    body: "30 minutes, no pitch deck. Bring your problem, timeline, and budget.",
   },
   {
     number: "2",
-    title: "We write the plan",
-    body: "Approach, scope, cost, timeline, alternatives. Several rounds of iteration to land it.",
+    title: "Buy the Blueprint ($449)",
+    body: "Two hours with the team and a written plan you own — credited if we build.",
   },
   {
     number: "3",
-    title: "You decide",
-    body: "Engage on the plan (the $449 credits in), walk away with the plan, or take our referral elsewhere.",
+    title: "Build your dream",
+    body: "We build it with you — website, go-to-market motion, or custom app.",
   },
 ];
 

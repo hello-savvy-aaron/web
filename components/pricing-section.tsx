@@ -77,7 +77,7 @@ export default function PricingSection() {
         <div className="mb-10 max-w-[720px]">
           <EyebrowPill className="mb-4">HOW IT STARTS</EyebrowPill>
           <h3 className="text-[28px] leading-[1.1] font-bold tracking-[-0.025em] text-ink-primary md:text-4xl">
-            Same first three steps, every time.
+            Three simple steps.
           </h3>
         </div>
         <ProcessSteps />
