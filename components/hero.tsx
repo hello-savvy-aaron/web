@@ -24,8 +24,8 @@ export default function Hero() {
         </h1>
 
         <p className="mb-10 max-w-[540px] text-base leading-[1.5] font-normal text-ink-secondary lg:text-lg">
-          We bring enterprise-class rigor to small business — AI-driven results
-          across sites, software, and sales.
+          AI-driven sites, software, and sales. Enterprise-class rigor for the
+          small business.
         </p>
 
         <div className="flex flex-wrap gap-4">
