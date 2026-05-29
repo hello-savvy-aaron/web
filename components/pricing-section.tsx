@@ -83,29 +83,15 @@ export default function PricingSection() {
           className="mx-auto max-w-[1280px] rounded-xl px-8 py-20 text-center"
           style={SOFT_GRADIENT_BG}
         >
-          <h3 className="mx-auto mb-5 max-w-[640px] text-[32px] leading-[1.1] font-bold tracking-[-0.025em] text-ink-primary md:text-4xl">
+          <h3 className="mx-auto mb-8 max-w-[640px] text-[32px] leading-[1.1] font-bold tracking-[-0.025em] text-ink-primary md:text-4xl">
             Start with a quick chat.
           </h3>
-          <p className="mx-auto mb-8 max-w-[560px] text-base leading-[1.5] text-ink-secondary lg:text-lg">
-            $449 buys you two hours with the team and a written plan. If we
-            engage, it credits back. If we don&apos;t, you still own the plan.
-          </p>
-          <form action={startBlueprintCheckout} className="inline-block">
-            <button
-              type="submit"
-              className="rounded-pill bg-display-lavender px-8 py-4 text-base font-semibold text-white shadow-[0_0_24px_0_rgba(91,71,229,0.3)] transition-colors duration-150 ease-out hover:bg-brand-primary-hover"
-            >
-              Get the Blueprint ($449)
-            </button>
-          </form>
-          <div className="mt-5">
-            <Link
-              href="/book"
-              className="text-sm font-medium text-display-lavender transition-colors duration-150 ease-out hover:text-brand-primary-hover"
-            >
-              Not sure yet? Book a free chat first →
-            </Link>
-          </div>
+          <Link
+            href="/book"
+            className="inline-block rounded-pill bg-display-lavender px-8 py-4 text-base font-semibold text-white shadow-[0_0_24px_0_rgba(91,71,229,0.3)] transition-colors duration-150 ease-out hover:bg-brand-primary-hover"
+          >
+            Book a Chat (Free)
+          </Link>
         </div>
       </section>
     </div>
