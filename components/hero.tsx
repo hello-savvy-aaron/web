@@ -52,25 +52,25 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* TEMPORARY: giant HS monogram in place of the hero image. Per
-          2026-05-19 design note — overrides §4 "wordmark/mark never combined"
-          for now; revisit when the real hero visual (project tracker) lands. */}
+      {/* TEMPORARY: overlapping speech-bubble mark in place of the hero image.
+          Per founder request 2026-05-29 (departs from §4) — revisit when the
+          real hero visual (project tracker) lands. */}
       <div
         aria-hidden
         className="flex aspect-[4/3] w-full items-center justify-center"
       >
         <svg
-          viewBox="0 0 120 120"
+          viewBox="0 0 200 200"
           className="h-full w-auto drop-shadow-[0_24px_64px_rgba(91,71,229,0.18)]"
           xmlns="http://www.w3.org/2000/svg"
         >
           <defs>
             <linearGradient
-              id="hero-hs"
-              x1="6"
-              y1="6"
-              x2="114"
-              y2="114"
+              id="hero-bubbles"
+              x1="40"
+              y1="100"
+              x2="160"
+              y2="100"
               gradientUnits="userSpaceOnUse"
             >
               <stop offset="0" stopColor="#5B47E5" />
@@ -78,27 +78,19 @@ export default function Hero() {
               <stop offset="1" stopColor="#D8479A" />
             </linearGradient>
           </defs>
-          <rect
-            x="6"
-            y="6"
-            width="108"
-            height="108"
-            rx="26"
-            fill="url(#hero-hs)"
+          <g fill="url(#hero-bubbles)">
+            <circle cx="80" cy="90" r="50" />
+            <path d="M78 126 H104 L85 166 Z" />
+            <circle cx="120" cy="90" r="50" />
+            <path d="M122 126 H96 L115 166 Z" />
+          </g>
+          <path
+            d="M100 43 C114 69 114 111 100 137 C86 111 86 69 100 43 Z"
+            fill="none"
+            stroke="#FBF8F2"
+            strokeWidth="9"
+            strokeLinejoin="round"
           />
-          <text
-            x="60"
-            y="60"
-            fill="#FFFFFF"
-            fontFamily="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
-            fontSize="58"
-            fontWeight="800"
-            letterSpacing="-2"
-            textAnchor="middle"
-            dominantBaseline="central"
-          >
-            HS
-          </text>
         </svg>
       </div>
     </section>
