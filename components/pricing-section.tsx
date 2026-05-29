@@ -20,7 +20,7 @@ const SOFT_GRADIENT_BG: React.CSSProperties = {
 
 export default function PricingSection() {
   return (
-    <div id="pricing" className="scroll-mt-24 pb-24">
+    <div id="pricing" className="scroll-mt-24">
       {/* Section header */}
       <section className="mx-auto max-w-[1280px] px-8 pt-12 pb-8 lg:pt-16 lg:pb-10">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-end lg:gap-16">
