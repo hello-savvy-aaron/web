@@ -41,14 +41,14 @@ export default function PricingSection() {
               <form action={startBlueprintCheckout}>
                 <button
                   type="submit"
-                  className="rounded-pill bg-display-lavender px-7 py-3 text-sm font-semibold text-white shadow-[0_0_24px_0_rgba(91,71,229,0.3)] transition-colors duration-150 ease-out hover:bg-brand-primary-hover md:text-base"
+                  className="rounded-pill bg-mint-100 px-7 py-3 text-sm font-semibold text-ink-primary ring-2 ring-mint-500 ring-inset transition-colors duration-150 ease-out hover:bg-mint-200 md:text-base"
                 >
                   Get the Blueprint ($449)
                 </button>
               </form>
               <Link
                 href="/book"
-                className="rounded-pill bg-brand-primary-soft px-7 py-3 text-sm font-semibold text-display-lavender transition-colors duration-150 ease-out hover:bg-[#E2DAF7] md:text-base"
+                className="rounded-pill bg-display-lavender px-7 py-3 text-sm font-semibold text-white shadow-[0_0_24px_0_rgba(91,71,229,0.3)] transition-colors duration-150 ease-out hover:bg-brand-primary-hover md:text-base"
               >
                 Book a Chat (Free)
               </Link>
