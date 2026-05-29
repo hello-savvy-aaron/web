@@ -12,7 +12,7 @@ const GRADIENT_TEXT: React.CSSProperties = {
 
 export default function Hero() {
   return (
-    <section className="mx-auto grid max-w-[1280px] grid-cols-1 gap-16 px-8 pt-24 pb-32 lg:grid-cols-2 lg:items-center">
+    <section className="mx-auto grid max-w-[1280px] grid-cols-1 gap-16 px-8 pt-24 pb-32 xl:grid-cols-2 xl:items-center">
       <div className="flex flex-col">
         <span className="mb-6 inline-flex w-fit rounded-pill bg-brand-primary-soft px-[14px] py-[6px] text-xs font-semibold tracking-[0.08em] text-display-lavender">
           BOUTIQUE SOFTWARE STUDIO
@@ -28,23 +28,23 @@ export default function Hero() {
           small business.
         </p>
 
-        <div className="flex flex-wrap gap-4">
-          <Link
-            href="/book"
-            className="rounded-pill bg-display-lavender px-8 py-4 text-base font-semibold text-white shadow-[0_0_24px_0_rgba(91,71,229,0.3)] transition-colors duration-150 ease-out hover:bg-brand-primary-hover"
-          >
-            Book a Chat (Free)
-          </Link>
+        <div className="flex flex-wrap items-center gap-3">
           <Link
             href="/#pricing"
-            className="rounded-pill bg-brand-primary-soft px-8 py-4 text-base font-semibold text-display-lavender transition-colors duration-150 ease-out hover:bg-[#E2DAF7]"
+            className="rounded-pill bg-brand-primary-soft px-6 py-3.5 text-base font-semibold whitespace-nowrap text-display-lavender transition-colors duration-150 ease-out hover:bg-[#E2DAF7]"
           >
             View Pricing
+          </Link>
+          <Link
+            href="/book"
+            className="rounded-pill bg-display-lavender px-6 py-3.5 text-base font-semibold whitespace-nowrap text-white shadow-[0_0_24px_0_rgba(91,71,229,0.3)] transition-colors duration-150 ease-out hover:bg-brand-primary-hover"
+          >
+            Book a Chat (Free)
           </Link>
           <form action={startBlueprintCheckout}>
             <button
               type="submit"
-              className="rounded-pill bg-mint-100 px-8 py-4 text-base font-semibold text-ink-primary ring-2 ring-mint-500 ring-inset transition-colors duration-150 ease-out hover:bg-mint-200"
+              className="rounded-pill bg-mint-100 px-6 py-3.5 text-base font-semibold whitespace-nowrap text-ink-primary ring-2 ring-mint-500 ring-inset transition-colors duration-150 ease-out hover:bg-mint-200"
             >
               Get Blueprints ($449)
             </button>
