@@ -7,6 +7,7 @@ export type Tier = {
   price: string;
   priceLabel: string;
   anchor: string;
+  anchorHref?: string;
   shortDescription: string;
   pitch: string;
   whatYouGet: string[];
@@ -39,7 +40,8 @@ export const TIERS: Tier[] = [
     name: "Websites & Go-to-Market",
     price: "$2K–$5K",
     priceLabel: "Price: 2,000 to 5,000 US dollars",
-    anchor: "Haka Construction",
+    anchor: "HAKA Deck",
+    anchorHref: "https://hakadeck.com",
     shortDescription:
       "Sites that do real work — strategy, copy, design, build, launch. Plus the growth motions that put them in front of customers: positioning, messaging, channel strategy, lifecycle. Led by Lara on the GTM side.",
     pitch:

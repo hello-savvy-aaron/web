@@ -69,7 +69,18 @@ export default function TierCard({ tier, highlighted = false }: TierCardProps) {
           <div className="mb-1 text-xs font-semibold tracking-[0.08em] text-ink-tertiary uppercase">
             Anchor example
           </div>
-          <div className="text-sm text-ink-secondary">{tier.anchor}</div>
+          {tier.anchorHref ? (
+            <a
+              href={tier.anchorHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium text-display-lavender transition-colors duration-150 ease-out hover:text-brand-primary-hover hover:underline"
+            >
+              {tier.anchor}
+            </a>
+          ) : (
+            <div className="text-sm text-ink-secondary">{tier.anchor}</div>
+          )}
         </div>
 
         <button
