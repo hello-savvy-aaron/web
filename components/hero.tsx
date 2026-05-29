@@ -31,7 +31,7 @@ export default function Hero() {
         <div className="flex flex-wrap items-center gap-3">
           <Link
             href="/#pricing"
-            className="rounded-pill bg-brand-primary-soft px-6 py-3.5 text-base font-semibold whitespace-nowrap text-display-lavender transition-colors duration-150 ease-out hover:bg-[#E2DAF7]"
+            className="rounded-pill bg-brand-primary-soft px-6 py-3.5 text-base font-semibold whitespace-nowrap text-display-lavender ring-2 ring-display-lavender ring-inset transition-colors duration-150 ease-out hover:bg-[#E2DAF7]"
           >
             View Pricing
           </Link>
