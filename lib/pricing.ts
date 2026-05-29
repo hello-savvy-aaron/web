@@ -40,7 +40,7 @@ export const TIERS: Tier[] = [
     name: "Websites & Go-to-Market",
     price: "$2K–$5K",
     priceLabel: "Price: 2,000 to 5,000 US dollars",
-    anchor: "HAKA Deck",
+    anchor: "Haka Deck",
     anchorHref: "https://hakadeck.com",
     shortDescription:
       "Sites that do real work — strategy, copy, design, build, launch. Plus the growth motions that put them in front of customers: positioning, messaging, channel strategy, lifecycle.",
@@ -67,13 +67,13 @@ export const TIERS: Tier[] = [
     shortDescription:
       "Production-grade software — web apps, internal tools, customer portals, AI features, agentic workflows. Auth, payments, real-time updates, the things vibe coders can't ship. Modern stacks with AI woven through the work.",
     pitch:
-      "Production-grade software. The things vibe-coding tools can't ship.",
+      "Production-grade software. When vibe coding just can't get you there.",
     whatYouGet: [
       "Modern stack (Next.js, TypeScript, Supabase, Vercel — or what fits)",
-      "Auth, payments, real-time, the unglamorous load-bearing parts",
-      "AI features and agentic workflows where they earn their keep",
-      "Senior engineering throughout — no junior layer learning on your dime",
-      "Tracker access with milestones, screenshots, and a comment thread",
+      "Authentication, payments, admin, integrations, and workflows — the 90% of the iceberg you can't see but definitely need",
+      "AI features and agentic workflows that earn their keep",
+      "Senior engineers amplified with AI",
+      "Constant communication, working to a detailed plan, hitting every milestone and delivering for you",
     ],
     ctaLabel: "Start with a Blueprint",
   },
