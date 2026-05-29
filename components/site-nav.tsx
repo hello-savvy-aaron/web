@@ -1,5 +1,5 @@
 import Link from "next/link";
-import SiteLogo from "@/components/site-logo";
+import Wordmark from "@/components/wordmark";
 
 const NAV_LINKS: { label: string; href: string }[] = [];
 
@@ -7,7 +7,7 @@ export default function SiteNav() {
   return (
     <nav className="mx-auto flex max-w-[1280px] items-center justify-between px-8 py-5">
       <Link href="/" aria-label="HelloSavvy home">
-        <SiteLogo />
+        <Wordmark size="lg" className="text-2xl md:text-3xl" />
       </Link>
 
       <div className="hidden items-center gap-8 md:flex">
