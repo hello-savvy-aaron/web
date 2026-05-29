@@ -18,11 +18,11 @@ export const metadata: Metadata = {
     template: "%s · HelloSavvy",
   },
   description:
-    "Enterprise-class standards, built for your scale. Start with a Blueprint for under $500.",
+    "Enterprise-class standards, built for your scale. Start with Blueprints for under $500.",
   openGraph: {
     title: "HelloSavvy — Custom software, transparently built",
     description:
-      "Enterprise-class standards, built for your scale. Start with a Blueprint for under $500.",
+      "Enterprise-class standards, built for your scale. Start with Blueprints for under $500.",
     url: "https://hellosavvy.design",
     siteName: "HelloSavvy",
     images: [
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "HelloSavvy — Custom software, transparently built",
     description:
-      "Enterprise-class standards, built for your scale. Start with a Blueprint for under $500.",
+      "Enterprise-class standards, built for your scale. Start with Blueprints for under $500.",
     images: ["/og-image.png"],
   },
 };

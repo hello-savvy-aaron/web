@@ -39,7 +39,7 @@ export default async function PaymentSuccessPage({ searchParams }: Props) {
       </h1>
       <p className="mb-10 text-base leading-[1.5] text-ink-secondary lg:text-lg">
         {amount
-          ? `We've received your payment of ${amount} for the Blueprint.`
+          ? `We've received your payment of ${amount} for Blueprints.`
           : "Your payment was successful."}{" "}
         A receipt is on its way to your inbox. The team will follow up within one
         business day with the discovery questions and a calendar link.

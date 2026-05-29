@@ -32,7 +32,7 @@ export default function PricingSection() {
           </div>
           <div className="flex flex-col">
             <p className="mb-8 max-w-[560px] text-base leading-[1.5] text-ink-secondary lg:text-lg">
-              Every project starts with a $449 Blueprint — a practical roadmap
+              Every project starts with $449 Blueprints — a practical roadmap
               that stands on its own. Like the direction? We&apos;ll build it
               with you — website, go-to-market motion, or custom app — with the
               $449 credited toward the work.
@@ -43,7 +43,7 @@ export default function PricingSection() {
                   type="submit"
                   className="rounded-pill bg-mint-100 px-7 py-3 text-sm font-semibold text-ink-primary ring-2 ring-mint-500 ring-inset transition-colors duration-150 ease-out hover:bg-mint-200 md:text-base"
                 >
-                  Get the Blueprint ($449)
+                  Get Blueprints ($449)
                 </button>
               </form>
               <Link
