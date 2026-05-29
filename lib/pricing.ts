@@ -88,7 +88,7 @@ export const PROCESS_STEPS = [
   {
     number: "2",
     title: "Buy the Blueprint ($449)",
-    body: "Two hours with the team and a written plan you own — credited if we build.",
+    body: "From strategy to execution: a detailed, actionable plan that stands on its own.",
   },
   {
     number: "3",
