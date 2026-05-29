@@ -85,7 +85,7 @@ export default function PricingSection() {
           style={SOFT_GRADIENT_BG}
         >
           <h3 className="mx-auto mb-5 max-w-[640px] text-[32px] leading-[1.1] font-bold tracking-[-0.025em] text-ink-primary md:text-4xl">
-            Start with the Blueprint.
+            Start with a quick chat.
           </h3>
           <p className="mx-auto mb-8 max-w-[560px] text-base leading-[1.5] text-ink-secondary lg:text-lg">
             $449 buys you two hours with the team and a written plan. If we
