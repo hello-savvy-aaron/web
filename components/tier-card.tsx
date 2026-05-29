@@ -1,4 +1,3 @@
-import { startBlueprintCheckout } from "@/app/actions/checkout";
 import type { Tier } from "@/lib/pricing";
 
 function CheckIcon() {
@@ -30,8 +29,7 @@ type TierCardProps = {
 
 export default function TierCard({ tier, highlighted = false }: TierCardProps) {
   return (
-    <form
-      action={startBlueprintCheckout}
+    <div
       className={`group flex h-full flex-col rounded-xl bg-bg-elevated p-8 shadow-[0_4px_12px_-2px_rgba(13,31,28,0.06),0_2px_4px_-2px_rgba(13,31,28,0.04)] transition-all duration-150 ease-out hover:-translate-y-[2px] hover:shadow-[0_12px_32px_-4px_rgba(13,31,28,0.08),0_4px_8px_-2px_rgba(13,31,28,0.04)] ${
         highlighted ? "ring-2 ring-display-lavender ring-offset-2 ring-offset-bg-canvas" : ""
       }`}
@@ -82,14 +80,7 @@ export default function TierCard({ tier, highlighted = false }: TierCardProps) {
             <div className="text-sm text-ink-secondary">{tier.anchor}</div>
           )}
         </div>
-
-        <button
-          type="submit"
-          className="w-full rounded-pill bg-display-lavender px-6 py-3 text-sm font-semibold text-white shadow-[0_0_24px_0_rgba(91,71,229,0.3)] transition-colors duration-150 ease-out hover:bg-brand-primary-hover"
-        >
-          {tier.ctaLabel}
-        </button>
       </div>
-    </form>
+    </div>
   );
 }
