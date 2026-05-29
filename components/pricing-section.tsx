@@ -59,7 +59,6 @@ export default function PricingSection() {
 
       {/* Tier deep-dive cards */}
       <section className="mx-auto mt-6 w-full max-w-[1280px] px-8">
-        <EyebrowPill className="mb-8 text-sm">WHAT YOU GET</EyebrowPill>
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-3 lg:items-stretch">
           {TIERS.map((tier) => (
             <TierCard key={tier.id} tier={tier} />
