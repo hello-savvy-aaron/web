@@ -43,15 +43,17 @@ export const TIERS: Tier[] = [
     anchor: "HAKA Deck",
     anchorHref: "https://hakadeck.com",
     shortDescription:
-      "Sites that do real work — strategy, copy, design, build, launch. Plus the growth motions that put them in front of customers: positioning, messaging, channel strategy, lifecycle. Led by Lara on the GTM side.",
+      "Sites that do real work — strategy, copy, design, build, launch. Plus the growth motions that put them in front of customers: positioning, messaging, channel strategy, lifecycle.",
     pitch:
       "Sites that do real work, and the growth motion that puts them in front of customers.",
     whatYouGet: [
-      "Positioning and messaging worked through before any pixel is pushed",
-      "Copy, design, build, launch — by partners, not handoffs",
-      "Channel strategy and lifecycle (email, content, paid where it fits)",
-      "Lara leads the GTM side; 30 years across QA, BA, and lean process",
-      "Tracker access for the duration of the engagement",
+      "Starts with your ideal customer profile — the foundation for everything else",
+      "Brand, messaging, offer, and pricing tuned to that profile",
+      "Channels, ads, and sales outreach mapped before we build",
+      "The site comes last — built to reflect the strategy, not guess at it",
+      "Copy, design, build, launch — by partners, no handoffs",
+      "Analytics-driven: lower cost per click, higher conversion",
+      "Full visibility every step of the way through your client portal",
     ],
     ctaLabel: "Start with a Blueprint",
   },
