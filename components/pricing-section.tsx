@@ -3,7 +3,7 @@ import { startBlueprintCheckout } from "@/app/actions/checkout";
 import EyebrowPill from "@/components/eyebrow-pill";
 import ProcessSteps from "@/components/process-steps";
 import TierCard from "@/components/tier-card";
-import { NOT_IN_SCOPE, TIERS } from "@/lib/pricing";
+import { TIERS } from "@/lib/pricing";
 
 const GRADIENT_TEXT: React.CSSProperties = {
   backgroundImage:
@@ -81,30 +81,6 @@ export default function PricingSection() {
           </h3>
         </div>
         <ProcessSteps />
-      </section>
-
-      {/* Things we don't do */}
-      <section className="mx-auto mt-24 w-full max-w-[1100px] px-8">
-        <div className="rounded-xl bg-bg-section-tint p-8 md:p-10">
-          <EyebrowPill className="mb-4">SCOPE</EyebrowPill>
-          <h3 className="mb-6 text-[28px] leading-[1.1] font-bold tracking-[-0.025em] text-ink-primary md:text-3xl">
-            Things we don&apos;t do.
-          </h3>
-          <ul className="flex max-w-[760px] flex-col gap-3">
-            {NOT_IN_SCOPE.map((item) => (
-              <li
-                key={item}
-                className="flex items-start gap-3 text-base leading-[1.5] text-ink-secondary"
-              >
-                <span
-                  aria-hidden
-                  className="mt-[10px] inline-block h-[2px] w-3 flex-shrink-0 bg-ink-tertiary"
-                />
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
       </section>
 
       {/* Final CTA band */}
