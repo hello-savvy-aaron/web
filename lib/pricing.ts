@@ -59,7 +59,7 @@ export const TIERS: Tier[] = [
   {
     id: "custom-apps",
     number: "03",
-    name: "Custom App Development",
+    name: "Custom Solutions",
     price: "$10K–$50K",
     priceLabel: "Price: 10,000 to 50,000 US dollars",
     anchor: "HS Project Tracker",
