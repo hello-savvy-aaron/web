@@ -28,16 +28,16 @@ export default function Hero() {
           small business.
         </p>
 
-        <div className="flex flex-wrap items-center gap-3">
+        <div className="flex flex-wrap items-center gap-5">
           <Link
             href="/#pricing"
-            className="rounded-pill bg-brand-primary-soft px-6 py-3.5 text-base font-semibold whitespace-nowrap text-display-lavender ring-2 ring-display-lavender ring-inset transition-colors duration-150 ease-out hover:bg-[#E2DAF7]"
+            className="text-base font-semibold whitespace-nowrap text-display-lavender transition-colors duration-150 ease-out hover:text-brand-primary-hover"
           >
             View Pricing
           </Link>
           <Link
             href="/book"
-            className="rounded-pill bg-display-lavender px-6 py-3.5 text-base font-semibold whitespace-nowrap text-white shadow-[0_0_24px_0_rgba(91,71,229,0.3)] transition-colors duration-150 ease-out hover:bg-brand-primary-hover"
+            className="rounded-pill bg-[linear-gradient(135deg,#EEE9FB_0%,#F1E7F7_50%,#FBE9F1_100%)] px-6 py-3.5 text-base font-semibold whitespace-nowrap text-ink-primary ring-2 ring-display-lavender ring-inset transition duration-150 ease-out hover:brightness-[0.97]"
           >
             Book a Call →
           </Link>

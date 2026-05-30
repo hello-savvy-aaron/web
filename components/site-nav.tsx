@@ -3,6 +3,9 @@ import Wordmark from "@/components/wordmark";
 
 const NAV_LINKS: { label: string; href: string }[] = [];
 
+// HelloSavvy app / client portal. TODO(founder): confirm the real URL.
+const APP_URL = "https://app.hellosavvy.design";
+
 export default function SiteNav() {
   return (
     <nav className="mx-auto flex max-w-[1280px] items-center justify-between px-8 py-5">
@@ -22,12 +25,20 @@ export default function SiteNav() {
         ))}
       </div>
 
-      <Link
-        href="/book"
-        className="rounded-pill bg-display-lavender px-[18px] py-[10px] text-xs font-semibold text-white shadow-[0_0_24px_0_rgba(91,71,229,0.3)] transition-colors duration-150 ease-out hover:bg-brand-primary-hover md:px-6 md:py-3 md:text-sm"
-      >
-        Book a Call →
-      </Link>
+      <div className="flex items-center gap-4 md:gap-6">
+        <a
+          href={APP_URL}
+          className="text-sm font-medium text-ink-primary transition-colors duration-150 ease-out hover:text-display-lavender"
+        >
+          Sign In
+        </a>
+        <Link
+          href="/book"
+          className="rounded-pill bg-display-lavender px-[18px] py-[10px] text-xs font-semibold text-white shadow-[0_0_24px_0_rgba(91,71,229,0.3)] transition-colors duration-150 ease-out hover:bg-brand-primary-hover md:px-6 md:py-3 md:text-sm"
+        >
+          Book a Call →
+        </Link>
+      </div>
     </nav>
   );
 }
