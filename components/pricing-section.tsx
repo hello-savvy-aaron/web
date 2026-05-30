@@ -36,10 +36,10 @@ export default function PricingSection() {
             <div className="flex flex-wrap gap-4">
               <Link
                 href="/book"
-                className="inline-flex items-center gap-2 rounded-pill bg-display-lavender px-7 py-3 text-sm font-semibold text-white shadow-[0_0_24px_0_rgba(91,71,229,0.3)] transition-colors duration-150 ease-out hover:bg-brand-primary-hover md:text-base"
+                className="inline-flex items-center gap-2 rounded-pill bg-[linear-gradient(135deg,#EEE9FB_0%,#F1E7F7_50%,#FBE9F1_100%)] px-7 py-3 text-sm font-semibold text-ink-primary ring-2 ring-display-lavender ring-inset transition duration-150 ease-out hover:brightness-[0.97] md:text-base"
               >
-                <CalendarIcon className="h-[18px] w-[18px]" />
                 Book a Call
+                <CalendarIcon className="h-[18px] w-[18px]" />
               </Link>
               <form action={startBlueprintCheckout}>
                 <button

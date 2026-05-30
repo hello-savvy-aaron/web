@@ -48,10 +48,10 @@ export default function ProcessSteps() {
             {step.cta?.kind === "book" && (
               <Link
                 href="/book"
-                className="mt-5 inline-flex w-fit items-center gap-2 rounded-pill bg-display-lavender px-5 py-2.5 text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-brand-primary-hover"
+                className="mt-5 inline-flex w-fit items-center gap-2 rounded-pill bg-[linear-gradient(135deg,#EEE9FB_0%,#F1E7F7_50%,#FBE9F1_100%)] px-5 py-2.5 text-sm font-semibold text-ink-primary ring-2 ring-display-lavender ring-inset transition duration-150 ease-out hover:brightness-[0.97]"
               >
-                <CalendarIcon className="h-4 w-4" />
                 {step.cta.label}
+                <CalendarIcon className="h-4 w-4" />
               </Link>
             )}
             {step.cta?.kind === "buy" && (

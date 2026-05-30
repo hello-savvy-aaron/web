@@ -35,10 +35,10 @@ export default function SiteNav() {
         </a>
         <Link
           href="/book"
-          className="inline-flex items-center gap-2 rounded-pill bg-display-lavender px-[18px] py-[10px] text-xs font-semibold text-white shadow-[0_0_24px_0_rgba(91,71,229,0.3)] transition-colors duration-150 ease-out hover:bg-brand-primary-hover md:px-6 md:py-3 md:text-sm"
+          className="inline-flex items-center gap-2 rounded-pill bg-[linear-gradient(135deg,#EEE9FB_0%,#F1E7F7_50%,#FBE9F1_100%)] px-[18px] py-[10px] text-xs font-semibold text-ink-primary ring-2 ring-display-lavender ring-inset transition duration-150 ease-out hover:brightness-[0.97] md:px-6 md:py-3 md:text-sm"
         >
-          <CalendarIcon className="h-4 w-4" />
           Book a Call
+          <CalendarIcon className="h-4 w-4" />
         </Link>
       </div>
     </nav>
