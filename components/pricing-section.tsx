@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { startBlueprintCheckout } from "@/app/actions/checkout";
+import CalendarIcon from "@/components/calendar-icon";
 import EyebrowPill from "@/components/eyebrow-pill";
 import ProcessSteps from "@/components/process-steps";
 import TierCard from "@/components/tier-card";
@@ -35,9 +36,10 @@ export default function PricingSection() {
             <div className="flex flex-wrap gap-4">
               <Link
                 href="/book"
-                className="rounded-pill bg-display-lavender px-7 py-3 text-sm font-semibold text-white shadow-[0_0_24px_0_rgba(91,71,229,0.3)] transition-colors duration-150 ease-out hover:bg-brand-primary-hover md:text-base"
+                className="inline-flex items-center gap-2 rounded-pill bg-display-lavender px-7 py-3 text-sm font-semibold text-white shadow-[0_0_24px_0_rgba(91,71,229,0.3)] transition-colors duration-150 ease-out hover:bg-brand-primary-hover md:text-base"
               >
-                Book a Call →
+                <CalendarIcon className="h-[18px] w-[18px]" />
+                Book a Call
               </Link>
               <form action={startBlueprintCheckout}>
                 <button

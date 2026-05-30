@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Wordmark from "@/components/wordmark";
+import CalendarIcon from "@/components/calendar-icon";
 
 const NAV_LINKS: { label: string; href: string }[] = [];
 
@@ -34,9 +35,10 @@ export default function SiteNav() {
         </a>
         <Link
           href="/book"
-          className="rounded-pill bg-display-lavender px-[18px] py-[10px] text-xs font-semibold text-white shadow-[0_0_24px_0_rgba(91,71,229,0.3)] transition-colors duration-150 ease-out hover:bg-brand-primary-hover md:px-6 md:py-3 md:text-sm"
+          className="inline-flex items-center gap-2 rounded-pill bg-display-lavender px-[18px] py-[10px] text-xs font-semibold text-white shadow-[0_0_24px_0_rgba(91,71,229,0.3)] transition-colors duration-150 ease-out hover:bg-brand-primary-hover md:px-6 md:py-3 md:text-sm"
         >
-          Book a Call →
+          <CalendarIcon className="h-4 w-4" />
+          Book a Call
         </Link>
       </div>
     </nav>

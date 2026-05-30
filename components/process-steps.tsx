@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { startBlueprintCheckout } from "@/app/actions/checkout";
+import CalendarIcon from "@/components/calendar-icon";
 import { PROCESS_STEPS } from "@/lib/pricing";
 
 function StepChevron() {
@@ -47,8 +48,9 @@ export default function ProcessSteps() {
             {step.cta?.kind === "book" && (
               <Link
                 href="/book"
-                className="mt-5 inline-flex w-fit items-center rounded-pill bg-display-lavender px-5 py-2.5 text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-brand-primary-hover"
+                className="mt-5 inline-flex w-fit items-center gap-2 rounded-pill bg-display-lavender px-5 py-2.5 text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-brand-primary-hover"
               >
+                <CalendarIcon className="h-4 w-4" />
                 {step.cta.label}
               </Link>
             )}

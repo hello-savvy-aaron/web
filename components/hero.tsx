@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { startBlueprintCheckout } from "@/app/actions/checkout";
+import CalendarIcon from "@/components/calendar-icon";
 
 const GRADIENT_TEXT: React.CSSProperties = {
   backgroundImage:
@@ -37,9 +38,10 @@ export default function Hero() {
           </Link>
           <Link
             href="/book"
-            className="rounded-pill bg-[linear-gradient(135deg,#EEE9FB_0%,#F1E7F7_50%,#FBE9F1_100%)] px-6 py-3.5 text-base font-semibold whitespace-nowrap text-ink-primary ring-2 ring-display-lavender ring-inset transition duration-150 ease-out hover:brightness-[0.97]"
+            className="inline-flex items-center gap-2 rounded-pill bg-[linear-gradient(135deg,#EEE9FB_0%,#F1E7F7_50%,#FBE9F1_100%)] px-6 py-3.5 text-base font-semibold whitespace-nowrap text-ink-primary ring-2 ring-display-lavender ring-inset transition duration-150 ease-out hover:brightness-[0.97]"
           >
-            Book a Call →
+            <CalendarIcon className="h-[18px] w-[18px]" />
+            Book a Call
           </Link>
           <form action={startBlueprintCheckout}>
             <button
