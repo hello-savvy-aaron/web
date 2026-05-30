@@ -18,7 +18,7 @@ export default function PricingSection() {
   return (
     <div id="pricing" className="scroll-mt-24">
       {/* Section header */}
-      <section className="mx-auto max-w-[1280px] px-8 pt-4 pb-8 lg:pt-6 lg:pb-10">
+      <section className="mx-auto max-w-[1280px] px-8 pt-10 pb-8 lg:pt-12 lg:pb-10">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-end lg:gap-16">
           <div>
             <EyebrowPill className="mb-6">PRICING</EyebrowPill>
@@ -53,7 +53,7 @@ export default function PricingSection() {
       </section>
 
       {/* Tier deep-dive cards */}
-      <section className="mx-auto mt-12 w-full max-w-[1280px] px-8">
+      <section className="mx-auto mt-20 w-full max-w-[1280px] px-8">
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-3 lg:items-stretch">
           {TIERS.map((tier) => (
             <TierCard key={tier.id} tier={tier} />
@@ -62,7 +62,7 @@ export default function PricingSection() {
       </section>
 
       {/* How an engagement starts */}
-      <section className="mx-auto mt-24 w-full max-w-[1280px] px-8">
+      <section className="mx-auto mt-28 w-full max-w-[1280px] px-8">
         <div className="mb-10 max-w-[720px]">
           <EyebrowPill className="mb-4">HOW TO GET STARTED</EyebrowPill>
           <h3 className="text-[28px] leading-[1.1] font-bold tracking-[-0.025em] text-ink-primary md:text-4xl">

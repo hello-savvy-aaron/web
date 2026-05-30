@@ -10,7 +10,7 @@ export default function SiteFooter() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="mt-24 border-t border-ink-primary/10 bg-bg-section-tint">
+    <footer className="mt-28 border-t border-ink-primary/10 bg-bg-section-tint">
       <div className="mx-auto flex max-w-[1280px] flex-col gap-10 px-8 py-14 md:flex-row md:items-start md:justify-between">
         <div className="max-w-[360px]">
           <Link href="/" aria-label="HelloSavvy home">
