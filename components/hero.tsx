@@ -28,13 +28,7 @@ export default function Hero() {
           small business.
         </p>
 
-        <div className="flex flex-wrap items-center gap-5">
-          <Link
-            href="/#pricing"
-            className="text-base font-semibold whitespace-nowrap text-display-lavender transition-colors duration-150 ease-out hover:text-brand-primary-hover"
-          >
-            View Pricing
-          </Link>
+        <div className="flex flex-wrap items-center gap-4">
           <Link
             href="/book"
             className="rounded-pill bg-[linear-gradient(135deg,#EEE9FB_0%,#F1E7F7_50%,#FBE9F1_100%)] px-6 py-3.5 text-base font-semibold whitespace-nowrap text-ink-primary ring-2 ring-display-lavender ring-inset transition duration-150 ease-out hover:brightness-[0.97]"
