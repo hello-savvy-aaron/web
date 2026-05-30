@@ -32,7 +32,7 @@ export const TIERS: Tier[] = [
       "Several rounds of iteration to tighten the plan",
       "$449 applies as credit toward any engagement that follows",
     ],
-    ctaLabel: "Get Blueprints ($449)",
+    ctaLabel: "Buy Blueprints",
   },
   {
     id: "websites-gtm",
@@ -90,13 +90,13 @@ export const PROCESS_STEPS: ProcessStep[] = [
     number: "1",
     title: "Have a free chat",
     body: "30 minutes, no pitch deck. Bring your problem, timeline, and budget.",
-    cta: { kind: "book", label: "Book a Chat (Free)" },
+    cta: { kind: "book", label: "Book a call →" },
   },
   {
     number: "2",
     title: "Buy Blueprints",
     body: "From strategy to execution: a detailed, actionable plan that stands on its own.",
-    cta: { kind: "buy", label: "Buy Blueprints ($449)" },
+    cta: { kind: "buy", label: "Buy Blueprints" },
   },
   {
     number: "3",

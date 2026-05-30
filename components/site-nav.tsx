@@ -26,7 +26,7 @@ export default function SiteNav() {
         href="/book"
         className="rounded-pill bg-display-lavender px-[18px] py-[10px] text-xs font-semibold text-white shadow-[0_0_24px_0_rgba(91,71,229,0.3)] transition-colors duration-150 ease-out hover:bg-brand-primary-hover md:px-6 md:py-3 md:text-sm"
       >
-        Book a Chat (Free)
+        Book a call →
       </Link>
     </nav>
   );

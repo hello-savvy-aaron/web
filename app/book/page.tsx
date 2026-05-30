@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import BookEmbed from "@/components/book-embed";
 
 export const metadata: Metadata = {
-  title: "Book a chat",
+  title: "Book a call",
   description:
     "30 minutes, on your calendar. No pitch deck — just an honest conversation about whether your project is a fit.",
 };

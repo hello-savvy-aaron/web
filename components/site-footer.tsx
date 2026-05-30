@@ -3,7 +3,7 @@ import Wordmark from "@/components/wordmark";
 
 const EXPLORE_LINKS = [
   { label: "Pricing", href: "/#pricing" },
-  { label: "Book a Chat", href: "/book" },
+  { label: "Book a call", href: "/book" },
 ];
 
 export default function SiteFooter() {
