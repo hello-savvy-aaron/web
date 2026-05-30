@@ -14,15 +14,11 @@ const GRADIENT_TEXT: React.CSSProperties = {
   color: "transparent",
 };
 
-const SOFT_GRADIENT_BG: React.CSSProperties = {
-  background: "linear-gradient(180deg, #FBF8F2 0%, #EEE9FB 100%)",
-};
-
 export default function PricingSection() {
   return (
     <div id="pricing" className="scroll-mt-24">
       {/* Section header */}
-      <section className="mx-auto max-w-[1280px] px-8 pt-12 pb-8 lg:pt-16 lg:pb-10">
+      <section className="mx-auto max-w-[1280px] px-8 pt-4 pb-8 lg:pt-6 lg:pb-10">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-end lg:gap-16">
           <div>
             <EyebrowPill className="mb-6">PRICING</EyebrowPill>
@@ -57,7 +53,7 @@ export default function PricingSection() {
       </section>
 
       {/* Tier deep-dive cards */}
-      <section className="mx-auto mt-6 w-full max-w-[1280px] px-8">
+      <section className="mx-auto mt-12 w-full max-w-[1280px] px-8">
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-3 lg:items-stretch">
           {TIERS.map((tier) => (
             <TierCard key={tier.id} tier={tier} />
@@ -74,24 +70,6 @@ export default function PricingSection() {
           </h3>
         </div>
         <ProcessSteps />
-      </section>
-
-      {/* Final CTA band */}
-      <section className="mt-24 px-4">
-        <div
-          className="mx-auto max-w-[1280px] rounded-xl px-8 py-20 text-center"
-          style={SOFT_GRADIENT_BG}
-        >
-          <h3 className="mx-auto mb-8 max-w-[640px] text-[32px] leading-[1.1] font-bold tracking-[-0.025em] text-ink-primary md:text-4xl">
-            Start with a quick chat.
-          </h3>
-          <Link
-            href="/book"
-            className="inline-block rounded-pill bg-display-lavender px-8 py-4 text-base font-semibold text-white shadow-[0_0_24px_0_rgba(91,71,229,0.3)] transition-colors duration-150 ease-out hover:bg-brand-primary-hover"
-          >
-            Book a Chat (Free)
-          </Link>
-        </div>
       </section>
     </div>
   );

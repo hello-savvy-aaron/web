@@ -78,16 +78,25 @@ export const TIERS: Tier[] = [
   },
 ];
 
-export const PROCESS_STEPS = [
+export type ProcessStep = {
+  number: string;
+  title: string;
+  body: string;
+  cta?: { kind: "book" | "buy"; label: string };
+};
+
+export const PROCESS_STEPS: ProcessStep[] = [
   {
     number: "1",
     title: "Have a free chat",
     body: "30 minutes, no pitch deck. Bring your problem, timeline, and budget.",
+    cta: { kind: "book", label: "Book a Chat (Free)" },
   },
   {
     number: "2",
-    title: "Buy Blueprints ($449)",
+    title: "Buy Blueprints",
     body: "From strategy to execution: a detailed, actionable plan that stands on its own.",
+    cta: { kind: "buy", label: "Buy Blueprints ($449)" },
   },
   {
     number: "3",

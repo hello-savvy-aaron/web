@@ -12,7 +12,7 @@ const GRADIENT_TEXT: React.CSSProperties = {
 
 export default function Hero() {
   return (
-    <section className="mx-auto grid max-w-[1280px] grid-cols-1 gap-16 px-8 pt-24 pb-32 xl:grid-cols-2 xl:items-center">
+    <section className="mx-auto grid max-w-[1280px] grid-cols-1 gap-16 px-8 pt-24 pb-16 xl:grid-cols-2 xl:items-center">
       <div className="flex flex-col">
         <span className="mb-6 inline-flex w-fit rounded-pill bg-brand-primary-soft px-[14px] py-[6px] text-xs font-semibold tracking-[0.08em] text-display-lavender">
           BOUTIQUE SOFTWARE STUDIO

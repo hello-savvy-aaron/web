@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { startBlueprintCheckout } from "@/app/actions/checkout";
 import { PROCESS_STEPS } from "@/lib/pricing";
 
 function StepChevron() {
@@ -42,6 +44,24 @@ export default function ProcessSteps() {
             <p className="text-sm leading-[1.5] text-ink-secondary">
               {step.body}
             </p>
+            {step.cta?.kind === "book" && (
+              <Link
+                href="/book"
+                className="mt-5 inline-flex w-fit items-center rounded-pill bg-display-lavender px-5 py-2.5 text-sm font-semibold text-white transition-colors duration-150 ease-out hover:bg-brand-primary-hover"
+              >
+                {step.cta.label}
+              </Link>
+            )}
+            {step.cta?.kind === "buy" && (
+              <form action={startBlueprintCheckout} className="mt-5">
+                <button
+                  type="submit"
+                  className="inline-flex w-fit items-center rounded-pill bg-mint-100 px-5 py-2.5 text-sm font-semibold text-ink-primary ring-2 ring-mint-500 ring-inset transition-colors duration-150 ease-out hover:bg-mint-200"
+                >
+                  {step.cta.label}
+                </button>
+              </form>
+            )}
           </div>
           {idx < PROCESS_STEPS.length - 1 && (
             <div className="flex items-center justify-center lg:px-1">
