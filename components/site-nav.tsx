@@ -4,8 +4,8 @@ import CalendarIcon from "@/components/calendar-icon";
 
 const NAV_LINKS: { label: string; href: string }[] = [];
 
-// HelloSavvy app / client portal. TODO(founder): confirm the real URL.
-const APP_URL = "https://app.hellosavvy.design";
+// HelloSavvy client portal.
+const APP_URL = "https://app.hellosavvy.design/portal";
 
 export default function SiteNav() {
   return (
