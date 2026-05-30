@@ -43,10 +43,6 @@ export default function ServicesSection() {
         <h2 className="text-[28px] leading-[1.1] font-bold tracking-[-0.025em] text-ink-primary md:text-4xl">
           One studio, three ways to grow.
         </h2>
-        <p className="mt-4 text-base leading-[1.5] text-ink-secondary lg:text-lg">
-          AI-driven sites, software, and sales — each backed by enterprise-class
-          rigor, with AI woven through the work.
-        </p>
       </div>
 
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
@@ -60,12 +56,9 @@ export default function ServicesSection() {
             <h3 className="mb-3 text-2xl font-bold tracking-[-0.015em] text-ink-primary">
               {service.title}
             </h3>
-            <p className="mb-6 text-base leading-[1.5] text-ink-secondary">
+            <p className="text-base leading-[1.5] text-ink-secondary">
               {service.blurb}
             </p>
-            <span className="mt-auto text-sm font-semibold text-display-lavender transition-colors duration-150 ease-out group-hover:text-brand-primary-hover">
-              See pricing →
-            </span>
           </Link>
         ))}
       </div>

@@ -25,9 +25,14 @@ function CheckIcon() {
 type TierCardProps = {
   tier: Tier;
   highlighted?: boolean;
+  deliverables?: React.ReactNode;
 };
 
-export default function TierCard({ tier, highlighted = false }: TierCardProps) {
+export default function TierCard({
+  tier,
+  highlighted = false,
+  deliverables,
+}: TierCardProps) {
   return (
     <div
       id={tier.id}
@@ -62,6 +67,8 @@ export default function TierCard({ tier, highlighted = false }: TierCardProps) {
           </li>
         ))}
       </ul>
+
+      {deliverables ? <div className="mb-8">{deliverables}</div> : null}
 
       <div className="mt-auto">
         <div className="mb-5 flex flex-wrap items-baseline gap-x-2">

@@ -30,7 +30,7 @@ export default function ProcessSteps() {
       {PROCESS_STEPS.map((step, idx) => (
         <div
           key={step.number}
-          className="flex flex-1 items-stretch gap-3 lg:items-center"
+          className="flex flex-1 items-stretch gap-3"
         >
           <div className="flex flex-1 flex-col rounded-lg bg-bg-elevated p-6 shadow-[0_1px_2px_0_rgba(13,31,28,0.04)]">
             <span

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { startBlueprintCheckout } from "@/app/actions/checkout";
+import BlueprintDeliverables from "@/components/blueprint-deliverables";
 import CalendarIcon from "@/components/calendar-icon";
 import EyebrowPill from "@/components/eyebrow-pill";
 import ProcessSteps from "@/components/process-steps";
@@ -19,7 +20,7 @@ export default function PricingSection() {
   return (
     <div id="pricing" className="scroll-mt-24">
       {/* Section header */}
-      <section className="mx-auto max-w-[1280px] px-8 pt-10 pb-8 lg:pt-12 lg:pb-10">
+      <section className="mx-auto max-w-[1280px] px-8 pt-24 pb-8 lg:pt-32 lg:pb-10">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-end lg:gap-16">
           <div>
             <EyebrowPill className="mb-6">PRICING</EyebrowPill>
@@ -58,7 +59,13 @@ export default function PricingSection() {
       <section className="mx-auto mt-20 w-full max-w-[1280px] px-8">
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-3 lg:items-stretch">
           {TIERS.map((tier) => (
-            <TierCard key={tier.id} tier={tier} />
+            <TierCard
+              key={tier.id}
+              tier={tier}
+              deliverables={
+                tier.id === "assessment" ? <BlueprintDeliverables /> : undefined
+              }
+            />
           ))}
         </div>
       </section>
