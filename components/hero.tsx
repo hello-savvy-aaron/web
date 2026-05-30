@@ -39,7 +39,7 @@ export default function Hero() {
             href="/book"
             className="rounded-pill bg-display-lavender px-6 py-3.5 text-base font-semibold whitespace-nowrap text-white shadow-[0_0_24px_0_rgba(91,71,229,0.3)] transition-colors duration-150 ease-out hover:bg-brand-primary-hover"
           >
-            Book a call →
+            Book a Call →
           </Link>
           <form action={startBlueprintCheckout}>
             <button

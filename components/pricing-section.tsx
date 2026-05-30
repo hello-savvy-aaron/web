@@ -32,7 +32,13 @@ export default function PricingSection() {
               stands on its own. Like the direction? We&apos;ll build it with you
               — website, go-to-market motion, or custom app.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap justify-end gap-4">
+              <Link
+                href="/book"
+                className="rounded-pill bg-display-lavender px-7 py-3 text-sm font-semibold text-white shadow-[0_0_24px_0_rgba(91,71,229,0.3)] transition-colors duration-150 ease-out hover:bg-brand-primary-hover md:text-base"
+              >
+                Book a Call →
+              </Link>
               <form action={startBlueprintCheckout}>
                 <button
                   type="submit"
@@ -41,12 +47,6 @@ export default function PricingSection() {
                   Buy Blueprints
                 </button>
               </form>
-              <Link
-                href="/book"
-                className="rounded-pill bg-display-lavender px-7 py-3 text-sm font-semibold text-white shadow-[0_0_24px_0_rgba(91,71,229,0.3)] transition-colors duration-150 ease-out hover:bg-brand-primary-hover md:text-base"
-              >
-                Book a call →
-              </Link>
             </div>
           </div>
         </div>

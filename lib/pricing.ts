@@ -90,7 +90,7 @@ export const PROCESS_STEPS: ProcessStep[] = [
     number: "1",
     title: "Have a free chat",
     body: "30 minutes, no pitch deck. Bring your problem, timeline, and budget.",
-    cta: { kind: "book", label: "Book a call →" },
+    cta: { kind: "book", label: "Book a Call →" },
   },
   {
     number: "2",
