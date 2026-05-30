@@ -32,10 +32,9 @@ export default function PricingSection() {
           </div>
           <div className="flex flex-col">
             <p className="mb-8 max-w-[560px] text-base leading-[1.5] text-ink-secondary lg:text-lg">
-              Every project starts with $449 Blueprints — a practical roadmap
-              that stands on its own. Like the direction? We&apos;ll build it
-              with you — website, go-to-market motion, or custom app — with the
-              $449 credited toward the work.
+              Every project starts with Blueprints — a practical roadmap that
+              stands on its own. Like the direction? We&apos;ll build it with you
+              — website, go-to-market motion, or custom app.
             </p>
             <div className="flex flex-wrap gap-4">
               <form action={startBlueprintCheckout}>
