@@ -1,9 +1,7 @@
 import Link from "next/link";
 import Wordmark from "@/components/wordmark";
 
-const NAV_LINKS: { label: string; href: string }[] = [
-  { label: "Pricing", href: "/#pricing" },
-];
+const NAV_LINKS: { label: string; href: string }[] = [];
 
 // HelloSavvy app / client portal. TODO(founder): confirm the real URL.
 const APP_URL = "https://app.hellosavvy.design";
