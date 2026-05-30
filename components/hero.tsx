@@ -19,7 +19,7 @@ export default function Hero() {
         </span>
 
         <h1 className="mb-6 text-[36px] leading-[1.05] font-bold tracking-[-0.025em] text-ink-primary md:text-[48px] lg:text-hero">
-          Custom software,{" "}
+          Custom solutions,{" "}
           <span style={GRADIENT_TEXT}>transparently</span> built.
         </h1>
 

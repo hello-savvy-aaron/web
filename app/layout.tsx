@@ -14,13 +14,13 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://hellosavvy.design"),
   title: {
-    default: "HelloSavvy — Custom software, transparently built",
+    default: "HelloSavvy — Custom solutions, transparently built",
     template: "%s · HelloSavvy",
   },
   description:
     "Enterprise-class standards, built for your scale. Start with Blueprints for under $500.",
   openGraph: {
-    title: "HelloSavvy — Custom software, transparently built",
+    title: "HelloSavvy — Custom solutions, transparently built",
     description:
       "Enterprise-class standards, built for your scale. Start with Blueprints for under $500.",
     url: "https://hellosavvy.design",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "HelloSavvy — Custom software, transparently built",
+        alt: "HelloSavvy — Custom solutions, transparently built",
       },
     ],
     locale: "en_US",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "HelloSavvy — Custom software, transparently built",
+    title: "HelloSavvy — Custom solutions, transparently built",
     description:
       "Enterprise-class standards, built for your scale. Start with Blueprints for under $500.",
     images: ["/og-image.png"],
