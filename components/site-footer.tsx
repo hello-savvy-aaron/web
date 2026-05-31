@@ -44,7 +44,10 @@ export default function SiteFooter() {
       <div className="border-t border-ink-primary/10">
         <div className="mx-auto flex max-w-[1280px] flex-col gap-2 px-6 py-6 text-xs text-ink-tertiary md:flex-row md:items-center md:justify-between md:px-8">
           <span>© {year} HelloSavvy. All rights reserved.</span>
-          <span>Boutique software studio</span>
+          <div className="flex gap-4">
+            <Link href="/privacy" className="hover:text-ink-secondary transition-colors duration-150 ease-out">Privacy</Link>
+            <Link href="/terms" className="hover:text-ink-secondary transition-colors duration-150 ease-out">Terms</Link>
+          </div>
         </div>
       </div>
     </footer>
