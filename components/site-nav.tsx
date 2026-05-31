@@ -5,7 +5,7 @@ import CalendarIcon from "@/components/calendar-icon";
 const NAV_LINKS: { label: string; href: string }[] = [];
 
 // HelloSavvy client portal.
-const APP_URL = "https://app.hellosavvy.design/portal";
+const APP_URL = "https://app.hellosavvy.design/login";
 
 export default function SiteNav() {
   return (
@@ -29,7 +29,7 @@ export default function SiteNav() {
       <div className="flex items-center gap-4 md:gap-6">
         <a
           href={APP_URL}
-          className="text-sm font-medium text-ink-primary transition-colors duration-150 ease-out hover:text-display-lavender"
+          className="hidden text-sm font-medium text-ink-primary transition-colors duration-150 ease-out hover:text-display-lavender md:block"
         >
           Sign In
         </a>

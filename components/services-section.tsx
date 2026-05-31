@@ -36,9 +36,9 @@ export default function ServicesSection() {
   return (
     <section
       id="services"
-      className="mx-auto w-full max-w-[1280px] scroll-mt-24 px-8 pt-8 lg:pt-12"
+      className="mx-auto w-full max-w-[1280px] scroll-mt-24 px-6 pt-8 md:px-8 lg:pt-12"
     >
-      <div className="mb-10 max-w-[720px]">
+      <div className="mb-8 max-w-[720px] md:mb-10">
         <EyebrowPill className="mb-4">SERVICES</EyebrowPill>
         <h2 className="text-[28px] leading-[1.1] font-bold tracking-[-0.025em] text-ink-primary md:text-4xl">
           One studio, three ways to grow.

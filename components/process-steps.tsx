@@ -33,15 +33,17 @@ export default function ProcessSteps() {
           className="flex flex-1 items-stretch gap-3"
         >
           <div className="flex flex-1 flex-col rounded-lg bg-bg-elevated p-6 shadow-[0_1px_2px_0_rgba(13,31,28,0.04)]">
-            <span
-              className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-lime-200 text-2xl font-bold text-brand-deep"
-              aria-hidden
-            >
-              {step.number}
-            </span>
-            <h3 className="mb-2 text-xl font-bold tracking-[-0.015em] text-ink-primary">
-              {step.title}
-            </h3>
+            <div className="mb-2 flex items-center gap-3">
+              <span
+                className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-lime-200 text-lg font-bold text-brand-deep"
+                aria-hidden
+              >
+                {step.number}
+              </span>
+              <h3 className="text-xl font-bold tracking-[-0.015em] text-ink-primary">
+                {step.title}
+              </h3>
+            </div>
             <p className="text-sm leading-[1.5] text-ink-secondary">
               {step.body}
             </p>
@@ -66,7 +68,7 @@ export default function ProcessSteps() {
             )}
           </div>
           {idx < PROCESS_STEPS.length - 1 && (
-            <div className="flex items-center justify-center lg:px-1">
+            <div className="hidden items-center justify-center lg:flex lg:px-1">
               <StepChevron />
             </div>
           )}

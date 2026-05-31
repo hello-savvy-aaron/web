@@ -20,7 +20,7 @@ export default function PricingSection() {
   return (
     <div id="pricing" className="scroll-mt-24">
       {/* Section header */}
-      <section className="mx-auto max-w-[1280px] px-8 pt-24 pb-8 lg:pt-32 lg:pb-10">
+      <section className="mx-auto max-w-[1280px] px-6 pt-16 pb-8 md:px-8 lg:pt-32 lg:pb-10">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-end lg:gap-16">
           <div>
             <EyebrowPill className="mb-6">PRICING</EyebrowPill>
@@ -34,18 +34,18 @@ export default function PricingSection() {
               stands on its own. Like the direction? We&apos;ll build it with you
               — website, go-to-market motion, or custom app.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
               <Link
                 href="/book"
-                className="inline-flex items-center gap-2 rounded-pill bg-[linear-gradient(135deg,#EEE9FB_0%,#F1E7F7_50%,#FBE9F1_100%)] px-7 py-3 text-sm font-semibold text-ink-primary ring-2 ring-display-lavender ring-inset transition duration-150 ease-out hover:brightness-[0.97] md:text-base"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-pill bg-[linear-gradient(135deg,#EEE9FB_0%,#F1E7F7_50%,#FBE9F1_100%)] px-7 py-3 text-sm font-semibold text-ink-primary ring-2 ring-display-lavender ring-inset transition duration-150 ease-out hover:brightness-[0.97] sm:w-auto md:text-base"
               >
                 Book a Call
                 <CalendarIcon className="h-[18px] w-[18px]" />
               </Link>
-              <form action={startBlueprintCheckout}>
+              <form action={startBlueprintCheckout} className="w-full sm:w-auto">
                 <button
                   type="submit"
-                  className="rounded-pill bg-mint-100 px-7 py-3 text-sm font-semibold text-ink-primary ring-2 ring-mint-500 ring-inset transition-colors duration-150 ease-out hover:bg-mint-200 md:text-base"
+                  className="w-full rounded-pill bg-mint-100 px-7 py-3 text-sm font-semibold text-ink-primary ring-2 ring-mint-500 ring-inset transition-colors duration-150 ease-out hover:bg-mint-200 sm:w-auto md:text-base"
                 >
                   Buy Blueprints
                 </button>
@@ -56,7 +56,7 @@ export default function PricingSection() {
       </section>
 
       {/* Tier deep-dive cards */}
-      <section className="mx-auto mt-20 w-full max-w-[1280px] px-8">
+      <section className="mx-auto mt-12 w-full max-w-[1280px] px-6 md:px-8 lg:mt-20">
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-3 lg:items-stretch">
           {TIERS.map((tier) => (
             <TierCard
@@ -71,7 +71,7 @@ export default function PricingSection() {
       </section>
 
       {/* How an engagement starts */}
-      <section className="mx-auto mt-28 w-full max-w-[1280px] px-8">
+      <section className="mx-auto mt-16 w-full max-w-[1280px] px-6 md:px-8 lg:mt-28">
         <div className="mb-10 max-w-[720px]">
           <EyebrowPill className="mb-4">HOW TO GET STARTED</EyebrowPill>
           <h3 className="text-[28px] leading-[1.1] font-bold tracking-[-0.025em] text-ink-primary md:text-4xl">

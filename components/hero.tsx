@@ -13,7 +13,7 @@ const GRADIENT_TEXT: React.CSSProperties = {
 
 export default function Hero() {
   return (
-    <section className="mx-auto grid max-w-[1280px] grid-cols-1 gap-16 px-8 pt-24 pb-16 xl:grid-cols-2 xl:items-center">
+    <section className="mx-auto grid max-w-[1280px] grid-cols-1 gap-10 px-6 pt-12 pb-10 md:px-8 md:pt-20 md:pb-16 xl:grid-cols-2 xl:items-center">
       <div className="flex flex-col">
         <span className="mb-6 inline-flex w-fit rounded-pill bg-brand-primary-soft px-[14px] py-[6px] text-xs font-semibold tracking-[0.08em] text-display-lavender">
           BOUTIQUE SOFTWARE STUDIO
@@ -29,24 +29,24 @@ export default function Hero() {
           small business.
         </p>
 
-        <div className="flex flex-wrap items-center gap-5">
+        <div className="flex flex-col items-stretch gap-4 sm:flex-row sm:flex-wrap sm:items-center sm:gap-5">
           <Link
             href="/#pricing"
-            className="text-base font-semibold whitespace-nowrap text-display-lavender transition-colors duration-150 ease-out hover:text-brand-primary-hover"
+            className="order-last text-center text-base font-semibold whitespace-nowrap text-display-lavender transition-colors duration-150 ease-out hover:text-brand-primary-hover sm:order-first sm:text-left"
           >
             View Pricing
           </Link>
           <Link
             href="/book"
-            className="inline-flex items-center gap-2 rounded-pill bg-[linear-gradient(135deg,#EEE9FB_0%,#F1E7F7_50%,#FBE9F1_100%)] px-6 py-3.5 text-base font-semibold whitespace-nowrap text-ink-primary ring-2 ring-display-lavender ring-inset transition duration-150 ease-out hover:brightness-[0.97]"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-pill bg-[linear-gradient(135deg,#EEE9FB_0%,#F1E7F7_50%,#FBE9F1_100%)] px-6 py-3.5 text-base font-semibold whitespace-nowrap text-ink-primary ring-2 ring-display-lavender ring-inset transition duration-150 ease-out hover:brightness-[0.97] sm:w-auto"
           >
             Book a Call
             <CalendarIcon className="h-[18px] w-[18px]" />
           </Link>
-          <form action={startBlueprintCheckout}>
+          <form action={startBlueprintCheckout} className="w-full sm:w-auto">
             <button
               type="submit"
-              className="rounded-pill bg-mint-100 px-6 py-3.5 text-base font-semibold whitespace-nowrap text-ink-primary ring-2 ring-mint-500 ring-inset transition-colors duration-150 ease-out hover:bg-mint-200"
+              className="w-full rounded-pill bg-mint-100 px-6 py-3.5 text-base font-semibold whitespace-nowrap text-ink-primary ring-2 ring-mint-500 ring-inset transition-colors duration-150 ease-out hover:bg-mint-200 sm:w-auto"
             >
               Buy Blueprints
             </button>
@@ -59,7 +59,7 @@ export default function Hero() {
           for now; revisit when the real hero visual (project tracker) lands. */}
       <div
         aria-hidden
-        className="flex aspect-[4/3] w-full items-center justify-center"
+        className="hidden aspect-[4/3] w-full items-center justify-center xl:flex"
       >
         <svg
           viewBox="0 0 120 120"
