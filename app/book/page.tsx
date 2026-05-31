@@ -9,10 +9,10 @@ export const metadata: Metadata = {
 
 export default function BookPage() {
   return (
-    <main className="mx-auto max-w-[1280px] px-8 pt-16 pb-32">
+    <main className="mx-auto max-w-[1280px] px-6 pt-12 pb-20 md:px-8 md:pt-16 md:pb-32">
       <header className="mx-auto max-w-[720px] text-center">
         <span className="mb-6 inline-flex w-fit rounded-pill bg-brand-primary-soft px-[14px] py-[6px] text-xs font-semibold tracking-[0.08em] text-display-lavender">
-          BOOK A CHAT · FREE
+          BOOK A CALL · FREE
         </span>
         <h1 className="mb-6 text-[36px] leading-[1.05] font-bold tracking-[-0.025em] text-ink-primary md:text-[48px]">
           Pick a time. No pitch deck.
@@ -29,7 +29,7 @@ export default function BookPage() {
       <p className="mx-auto mt-8 max-w-[720px] text-center text-sm text-ink-tertiary">
         Calendar not loading?{" "}
         <a
-          href="mailto:aaron@hellosavvy.design?subject=Book%20a%20chat"
+          href="mailto:aaron@hellosavvy.design?subject=Book%20a%20call"
           className="text-display-lavender hover:underline"
         >
           Email aaron@hellosavvy.design
