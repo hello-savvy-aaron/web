@@ -32,7 +32,7 @@ export async function startBlueprintCheckout() {
             price_data: {
               currency: "usd",
               product_data: {
-                name: "Blueprint",
+                name: "Blueprints",
                 description:
                   "A fixed-price discovery engagement: discovery questions, honest plan or honest no, written recap within 24 hours.",
               },

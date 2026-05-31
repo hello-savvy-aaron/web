@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { startBlueprintCheckout } from "@/app/actions/checkout";
+import CalendarIcon from "@/components/calendar-icon";
 import { PROCESS_STEPS } from "@/lib/pricing";
 
 function StepChevron() {
@@ -27,24 +30,45 @@ export default function ProcessSteps() {
       {PROCESS_STEPS.map((step, idx) => (
         <div
           key={step.number}
-          className="flex flex-1 items-stretch gap-3 lg:items-center"
+          className="flex flex-1 items-stretch gap-3"
         >
           <div className="flex flex-1 flex-col rounded-lg bg-bg-elevated p-6 shadow-[0_1px_2px_0_rgba(13,31,28,0.04)]">
-            <span
-              className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-lime-200 text-2xl font-bold text-brand-deep"
-              aria-hidden
-            >
-              {step.number}
-            </span>
-            <h3 className="mb-2 text-xl font-bold tracking-[-0.015em] text-ink-primary">
-              {step.title}
-            </h3>
+            <div className="mb-2 flex items-center gap-3">
+              <span
+                className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-lime-200 text-lg font-bold text-brand-deep"
+                aria-hidden
+              >
+                {step.number}
+              </span>
+              <h3 className="text-xl font-bold tracking-[-0.015em] text-ink-primary">
+                {step.title}
+              </h3>
+            </div>
             <p className="text-sm leading-[1.5] text-ink-secondary">
               {step.body}
             </p>
+            {step.cta?.kind === "book" && (
+              <Link
+                href="/book"
+                className="mt-5 inline-flex w-fit items-center gap-2 rounded-pill bg-[linear-gradient(135deg,#EEE9FB_0%,#F1E7F7_50%,#FBE9F1_100%)] px-5 py-2.5 text-sm font-semibold text-ink-primary ring-2 ring-display-lavender ring-inset transition duration-150 ease-out hover:brightness-[0.97]"
+              >
+                {step.cta.label}
+                <CalendarIcon className="h-4 w-4" />
+              </Link>
+            )}
+            {step.cta?.kind === "buy" && (
+              <form action={startBlueprintCheckout} className="mt-5">
+                <button
+                  type="submit"
+                  className="inline-flex w-fit items-center rounded-pill bg-mint-100 px-5 py-2.5 text-sm font-semibold text-ink-primary ring-2 ring-mint-500 ring-inset transition-colors duration-150 ease-out hover:bg-mint-200"
+                >
+                  {step.cta.label}
+                </button>
+              </form>
+            )}
           </div>
           {idx < PROCESS_STEPS.length - 1 && (
-            <div className="flex items-center justify-center lg:px-1">
+            <div className="hidden items-center justify-center lg:flex lg:px-1">
               <StepChevron />
             </div>
           )}

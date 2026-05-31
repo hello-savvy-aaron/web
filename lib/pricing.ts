@@ -7,6 +7,7 @@ export type Tier = {
   price: string;
   priceLabel: string;
   anchor: string;
+  anchorHref?: string;
   shortDescription: string;
   pitch: string;
   whatYouGet: string[];
@@ -17,22 +18,21 @@ export const TIERS: Tier[] = [
   {
     id: "assessment",
     number: "01",
-    name: "Assessment & Plan",
+    name: "Blueprints & Plan",
     price: "$449",
     priceLabel: "Price: 449 US dollars",
     anchor: "Universal entry",
     shortDescription:
-      "Up to 2 hours with the team, two rounds of iteration, and a written plan covering recommended approach, scope, cost, timeline, and alternatives. Credit applies to any engagement that follows. The productized intake.",
+      "2 hours with the team, several rounds of iteration, and a written plan covering recommended approach, scope, cost, timeline, and alternatives. Credit applies to any engagement that follows. The productized intake.",
     pitch:
-      "The productized intake. Bring us an idea; leave with a real plan and an honest go or no-go.",
+      "The productized intake. Bring us an idea; leave with a real plan.",
     whatYouGet: [
-      "Up to 2 hours of consultation with the team",
+      "2 hours of consultation with the team",
       "A written plan: recommended approach, scope, cost, timeline, alternatives",
-      "Two rounds of iteration to tighten the plan",
+      "Several rounds of iteration to tighten the plan",
       "$449 applies as credit toward any engagement that follows",
-      "A clean break with a referral if we're not the right fit",
     ],
-    ctaLabel: "Start the Assessment ($449)",
+    ctaLabel: "Buy Blueprints",
   },
   {
     id: "websites-gtm",
@@ -40,62 +40,72 @@ export const TIERS: Tier[] = [
     name: "Websites & Go-to-Market",
     price: "$2K–$5K",
     priceLabel: "Price: 2,000 to 5,000 US dollars",
-    anchor: "Haka Construction",
+    anchor: "Haka Deck",
+    anchorHref: "https://hakadeck.com",
     shortDescription:
-      "Sites that do real work — strategy, copy, design, build, launch. Plus the growth motions that put them in front of customers: positioning, messaging, channel strategy, lifecycle. Led by Lara on the GTM side.",
+      "Sites that do real work — strategy, copy, design, build, launch. Plus the growth motions that put them in front of customers: positioning, messaging, channel strategy, lifecycle.",
     pitch:
       "Sites that do real work, and the growth motion that puts them in front of customers.",
     whatYouGet: [
-      "Positioning and messaging worked through before any pixel is pushed",
-      "Copy, design, build, launch — by partners, not handoffs",
-      "Channel strategy and lifecycle (email, content, paid where it fits)",
-      "Lara leads the GTM side; 30 years across QA, BA, and lean process",
-      "Tracker access for the duration of the engagement",
+      "Brand, messaging, offer, and pricing tuned to that profile",
+      "Channels, ads, and sales outreach mapped before we build",
+      "The site comes last — built to reflect the strategy, not guess at it",
+      "Copy, design, build, launch — by partners, no handoffs",
+      "Analytics-driven: lower cost per click, higher conversion",
+      "Full visibility every step of the way through your client portal",
     ],
-    ctaLabel: "Start with an Assessment",
+    ctaLabel: "Start with Blueprints",
   },
   {
     id: "custom-apps",
     number: "03",
-    name: "Custom App Development",
+    name: "Custom Solutions",
     price: "$10K–$50K",
     priceLabel: "Price: 10,000 to 50,000 US dollars",
     anchor: "HS Project Tracker",
     shortDescription:
       "Production-grade software — web apps, internal tools, customer portals, AI features, agentic workflows. Auth, payments, real-time updates, the things vibe coders can't ship. Modern stacks with AI woven through the work.",
     pitch:
-      "Production-grade software. The things vibe-coding tools can't ship.",
+      "Production-grade software. When vibe coding just can't get you there.",
     whatYouGet: [
       "Modern stack (Next.js, TypeScript, Supabase, Vercel — or what fits)",
-      "Auth, payments, real-time, the unglamorous load-bearing parts",
-      "AI features and agentic workflows where they earn their keep",
-      "Senior engineering throughout — no junior layer learning on your dime",
-      "Tracker access with milestones, screenshots, and a comment thread",
+      "Authentication, payments, admin, integrations, and workflows — the 90% of the iceberg you can't see but definitely need",
+      "AI features and agentic workflows that earn their keep",
+      "Senior engineers amplified with AI",
+      "Constant communication, working to a detailed plan, hitting every milestone and delivering for you",
     ],
-    ctaLabel: "Start with an Assessment",
+    ctaLabel: "Start with Blueprints",
   },
 ];
 
-export const PROCESS_STEPS = [
+export type ProcessStep = {
+  number: string;
+  title: string;
+  body: string;
+  cta?: { kind: "book" | "buy"; label: string };
+};
+
+export const PROCESS_STEPS: ProcessStep[] = [
   {
     number: "1",
-    title: "You buy the Assessment ($449)",
-    body: "We schedule a 2-hour call within 3 business days.",
+    title: "Have a free chat",
+    body: "30 minutes, no pitch deck. Bring your problem, timeline, and budget.",
+    cta: { kind: "book", label: "Book a Call" },
   },
   {
     number: "2",
-    title: "We write the plan",
-    body: "Approach, scope, cost, timeline, alternatives. Two rounds of iteration to land it.",
+    title: "Buy Blueprints",
+    body: "From strategy to execution: a detailed, actionable plan that stands on its own.",
+    cta: { kind: "buy", label: "Buy Blueprints" },
   },
   {
     number: "3",
-    title: "You decide",
-    body: "Engage on the plan (the $449 credits in), walk away with the plan, or take our referral elsewhere.",
+    title: "Build your dream",
+    body: "We build it with you — website, go-to-market motion, or custom app.",
   },
 ];
 
 export const NOT_IN_SCOPE = [
-  "Logo design and brand identity work as standalone projects",
   "Native iOS or Android development (responsive web with PWA install: yes)",
   "Enterprise procurement, SOC 2 audits, six-month sales cycles",
   "Pixel-perfect Figma mockups before any code (we design in the browser)",
@@ -112,12 +122,12 @@ export const FAQ = [
   {
     slug: "already-know",
     q: "What if I already know what I want built?",
-    a: "The Assessment is still the right starting point. Two hours with a senior engineer and a written plan will catch the things you haven't thought of yet — and price the work honestly. If we agree on the first call, we can compress the iteration rounds and move into the engagement faster.",
+    a: "Blueprints are still the right starting point. Two hours with a senior engineer and a written plan will catch the things you haven't thought of yet — and price the work honestly. If we agree on the first call, we can compress the iteration rounds and move into the engagement faster.",
   },
   {
     slug: "how-priced",
     q: "How are Websites & GTM and Custom Apps priced?",
-    a: "Fixed price per engagement, quoted after the Assessment. We don't do hourly billing. The ranges shown ($2K–$5K, $10K–$50K) cover most of what we take on; bigger or stranger work gets quoted individually.",
+    a: "Fixed price per engagement, quoted after Blueprints. We don't do hourly billing. The ranges shown ($2K–$5K, $10K–$50K) cover most of what we take on; bigger or stranger work gets quoted individually.",
   },
   {
     slug: "who-does-work",
@@ -126,7 +136,7 @@ export const FAQ = [
   },
   {
     slug: "not-a-fit",
-    q: "What if the Assessment surfaces that we're not a fit?",
+    q: "What if Blueprints surface that we're not a fit?",
     a: "You keep the written plan and we send you a referral to someone better suited. The $449 doesn't refund — it paid for the senior time and the plan, both of which you still get to keep.",
   },
   {

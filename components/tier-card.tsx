@@ -1,5 +1,3 @@
-import { startBlueprintCheckout } from "@/app/actions/checkout";
-import EyebrowPill from "@/components/eyebrow-pill";
 import type { Tier } from "@/lib/pricing";
 
 function CheckIcon() {
@@ -27,18 +25,22 @@ function CheckIcon() {
 type TierCardProps = {
   tier: Tier;
   highlighted?: boolean;
+  deliverables?: React.ReactNode;
 };
 
-export default function TierCard({ tier, highlighted = false }: TierCardProps) {
+export default function TierCard({
+  tier,
+  highlighted = false,
+  deliverables,
+}: TierCardProps) {
   return (
-    <form
-      action={startBlueprintCheckout}
-      className={`group flex h-full flex-col rounded-xl bg-bg-elevated p-8 shadow-[0_4px_12px_-2px_rgba(13,31,28,0.06),0_2px_4px_-2px_rgba(13,31,28,0.04)] transition-all duration-150 ease-out hover:-translate-y-[2px] hover:shadow-[0_12px_32px_-4px_rgba(13,31,28,0.08),0_4px_8px_-2px_rgba(13,31,28,0.04)] ${
+    <div
+      id={tier.id}
+      className={`group flex h-full scroll-mt-24 flex-col rounded-xl bg-bg-elevated p-8 shadow-[0_4px_12px_-2px_rgba(13,31,28,0.06),0_2px_4px_-2px_rgba(13,31,28,0.04)] transition-all duration-150 ease-out hover:-translate-y-[2px] hover:shadow-[0_12px_32px_-4px_rgba(13,31,28,0.08),0_4px_8px_-2px_rgba(13,31,28,0.04)] ${
         highlighted ? "ring-2 ring-display-lavender ring-offset-2 ring-offset-bg-canvas" : ""
       }`}
     >
-      <div className="mb-5 flex items-center justify-between gap-3">
-        <EyebrowPill>{tier.number}</EyebrowPill>
+      <div className="mb-5 flex items-center justify-end gap-3">
         <span
           className="inline-flex items-center rounded-pill bg-lime-200 px-3 py-1 text-sm font-bold text-brand-deep"
           aria-label={tier.priceLabel}
@@ -66,21 +68,27 @@ export default function TierCard({ tier, highlighted = false }: TierCardProps) {
         ))}
       </ul>
 
-      <div className="mt-auto">
-        <div className="mb-5">
-          <div className="mb-1 text-xs font-semibold tracking-[0.08em] text-ink-tertiary uppercase">
-            Anchor example
-          </div>
-          <div className="text-sm text-ink-secondary">{tier.anchor}</div>
-        </div>
+      {deliverables ? <div className="mb-8">{deliverables}</div> : null}
 
-        <button
-          type="submit"
-          className="w-full rounded-pill bg-display-lavender px-6 py-3 text-sm font-semibold text-white shadow-[0_0_24px_0_rgba(91,71,229,0.3)] transition-colors duration-150 ease-out hover:bg-brand-primary-hover"
-        >
-          {tier.ctaLabel}
-        </button>
+      <div className="mt-auto">
+        <div className="mb-5 flex flex-wrap items-baseline gap-x-2">
+          <span className="text-xs font-semibold tracking-[0.08em] text-ink-tertiary uppercase">
+            Anchor example:
+          </span>
+          {tier.anchorHref ? (
+            <a
+              href={tier.anchorHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium text-display-lavender transition-colors duration-150 ease-out hover:text-brand-primary-hover hover:underline"
+            >
+              {tier.anchor}
+            </a>
+          ) : (
+            <span className="text-sm text-ink-secondary">{tier.anchor}</span>
+          )}
+        </div>
       </div>
-    </form>
+    </div>
   );
 }
